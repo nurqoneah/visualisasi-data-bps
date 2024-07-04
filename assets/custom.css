@@ -1,0 +1,172 @@
+
+
+
+body {
+  /*overflow: hidden; /* Hide scrollbars */
+  background-color:transparent;
+  overflow-x: hidden;
+}
+
+.main{
+
+
+height:100% ;
+min-height:100vh;
+width:100% ;
+min-width:100vw;
+}
+
+
+.header-link.active {
+  color:white;
+    border-bottom: 1px solid white;
+    font-weight:bold;
+}
+
+.header-link:hover {
+ /* background-color: #67687A;*/
+  color:white;
+  font-weight:bold;
+}
+
+.header-link{
+color : #E5E5E5;
+font-size: 0.8rem;
+margin-top: 0.2rem;
+/*padding: 0;
+padding-left: 1.5rem*/
+}
+
+
+.filters_header{
+font-size: calc(0.4rem + 0.4vw); 
+}
+
+.table_header{
+font-size: calc(0.7rem + 0.4vw); 
+}
+
+
+.dropdown_filter{
+font-size: calc(0.4rem + 0.4vw); 
+}
+
+.radio_filters{
+font-size: calc(0.4rem + 0.4vw); 
+}
+
+.radio_filters2{
+font-size: calc(0.5rem + 0.4vw); 
+}
+
+
+
+
+.download_excel_button:hover {
+  background-color: #0089EB !important;
+  /*  color:white;1E99E2 */
+  font-weight:bold !important;
+}
+
+.myimg{
+/*height:calc(60rem + 1vh);*/
+/*width:calc(90rem + 1vw);*/
+}
+
+
+.main_header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: calc(0.5rem + 0.7vw);
+}
+
+
+
+.info-header{
+/*font-size: clamp(0.9rem, 0.8vw, 7rem);*/
+font-size: calc(0.45rem + 0.4vw);
+}
+
+
+.info-card{
+height:calc(7.5rem + 1vh);
+/*width:calc(9rem + 1vw);*/
+}
+
+.num{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+/*font-size: calc(0.9rem + 0.5vw);*/
+  transform: translate(-50%, -50%);
+}
+
+.Select-value-label {
+    color: black !important;
+   
+}
+
+
+.Select-value {
+    border-color: #BEBEBE !important;
+   
+}
+
+.VirtualizedSelectOption {
+    background-color: #DCDCDC;
+    color: black;
+font-size: calc(0.3rem + 0.4vw); 
+ }
+
+.charts-card{
+height:calc(19rem + 1vh);
+
+}
+
+.trades_num_graph{
+height:calc(18rem + 1vh);
+}
+
+.trades_balance_graph{
+height:calc(18rem + 1vh);
+}
+
+ 
+.filter_button{
+box-shadow: none !important ;
+}
+
+.options_label:hover{
+background-color: #E9E9E9 !important;
+width: 100% !important;
+padding: 0.1rem !important;
+}
+
+.dropdown_search{
+  box-shadow: 0.5px solid #E5E5E5 !important;
+}
+.custom-dropdown {
+  z-index: 100000 !important;
+  
+  
+
+}
+.multiselect_ts{
+  z-index: 100000;
+}
+
+.mantine-Card-root {
+  overflow: visible !important;
+}
+
+.label {
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .custom-dropdown {
+      width: 95vw !important;
+  }
+}

@@ -1,0 +1,306 @@
+index,var_id,title,sub_id,sub_name,subcsa_id,subcsa_name,notes,vertical,unit,graph_id,graph_name,domain,id_tur_var,turunan_variabel,turunan_variabel_komposisi_id,turunan_variabel_komposisi,tahun,jenis_data
+10368,1,Inflasi,3,Inflasi,0,#NUM!,NaN,5,Persen,3,line,1400,0,Tidak Ada,0,Tidak Ada,10,4    
+10369,2,Indeks Harga Konsumen,3,Inflasi,0,#NUM!,NaN,5,Tidak Ada Satuan,3,line,1400,0,Tidak Ada,0,Tidak Ada,14,4    
+10445,28,Proyeksi Penduduk 2010-2035 (Perempuan+Laki-Laki),12,Kependudukan,0,#NUM!,NaN,1,Ribu Jiwa,1,bar,1400,23,TOTAL,0,Tidak Ada,25,1    
+10478,30,Indeks Pembangunan Manusia (IPM),26,Indeks Pembangunan Manusia,0,#NUM!,NaN,7,Tidak Ada Satuan,3,line,1400,0,Tidak Ada,0,Tidak Ada,14,4    
+10479,31,Umur Harapan Hidup Saat Lahir (UHH),26,Indeks Pembangunan Manusia,0,#NUM!,NaN,7,Tahun,3,line,1400,0,Tidak Ada,0,Tidak Ada,14,2    
+10446,32,Penduduk Kabupaten/Kota,12,Kependudukan,0,#NUM!,"Hasil Sensus Penduduk 2020 (September 2020)/The result of The 2020 Indonesian census (September 2020) 
+
+Tahun 2021-2023 : Hasil Proyeksi Penduduk Interim 2020�2023 (Pertengahan tahun/Juni)",7,Jiwa,1,bar,1400,54-57,"Riau, Pekanbaru, Dumai, Tembilahan",3,bebas ,5,1    
+10463,33,NTP,22,Nilai Tukar Petani,0,#NUM!,NaN,1,Tidak Ada Satuan,3,line,1400,0,Tidak Ada,0,Tidak Ada,14,4    
+10433,36,Ekspor,8,Ekspor-Impor,0,#NUM!,NaN,1,Milyar US$,3,line,1400,0,Tidak Ada,0,Tidak Ada,9,2    
+10434,39,Impor,8,Ekspor-Impor,0,#NUM!,NaN,1,Juta US$,3,line,1400,0,Tidak Ada,0,Tidak Ada,9,2    
+10577,40,PDRB ADHB KabKota,52,Produk Domestik Regional Bruto (Kabupaten/Kota),0,#NUM!,"2021: Angka Sementara , 2022: Angka Sangat Sementara",7,Milyar Rupiah,3,line,1400,0,Tidak Ada,0,Tidak Ada,14,1    
+10386,42,TPT,6,Tenaga Kerja,0,#NUM!,2018-2021 memakai angka backcasting,7,Tidak Ada Satuan,3,line,1400,0,Tidak Ada,0,Tidak Ada,14,4    
+10465,43,Persentase Penduduk Miskin (Kab/Kot),23,Kemiskinan,0,#NUM!,NaN,7,Persen,2,pie,1400,0,Tidak Ada,0,Tidak Ada,14,3    
+10387,44,TPAK,6,Tenaga Kerja,0,#NUM!,2018-2021 : memakai angka backcasting,7,Tidak Ada Satuan,3,line,1400,0,Tidak Ada,0,Tidak Ada,13,4    
+10437,46,IBS,9,Industri,0,#NUM!,NaN,1,Persen,3,line,1400,0,Tidak Ada,0,Tidak Ada,4,4    
+10438,47,IMK,9,Industri,0,#NUM!,-,1,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,4    
+10480,49,Harapan Lama Sekolah (HLS),26,Indeks Pembangunan Manusia,0,#NUM!,NaN,7,Tahun,1,bar,1400,0,Tidak Ada,0,Tidak Ada,14,2    
+10481,50,Rata-Rata Lama Sekolah (RLS),26,Indeks Pembangunan Manusia,0,#NUM!,NaN,7,Tahun,1,bar,1400,0,Tidak Ada,0,Tidak Ada,9,2    
+10482,52,Pengeluaran Per Kapita,26,Indeks Pembangunan Manusia,0,#NUM!,NaN,7,Ribu Rupiah/Orang/Tahun,1,bar,1400,0,Tidak Ada,0,Tidak Ada,14,2    
+10500,55,Angka Partisipasi Kasar (APK),28,Pendidikan,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,42-44,SD/MI SMP/MTS SMA/SMK/MA,1,agregat,8,4    
+10625,59,PDRB ADHB Lapangan Usaha Triwulanan,156,Produk Domestik Regional Bruto (Lapangan Usaha),0,#NUM!,"2022: Angka Sementara , 2023: Angka Sangat Sementara",8,Juta Rupiah,3,line,1400,0,Tidak Ada,0,Tidak Ada,14,1    
+10626,60,PDRB ADHK Lapangan Usaha Triwulanan,156,Produk Domestik Regional Bruto (Lapangan Usaha),0,#NUM!,"2022: Angka Sementara , 2023: Angka Sangat Sementara",8,Juta Rupiah,3,line,1400,0,Tidak Ada,0,Tidak Ada,14,1    
+10578,69,PDRB ADHK KabKota,52,Produk Domestik Regional Bruto (Kabupaten/Kota),0,#NUM!,"2021: Angka Sementara , 2022: Angka Sangat Sementara",7,Milyar Rupiah,3,line,1400,0,Tidak Ada,0,Tidak Ada,14,1    
+10579,70,Distribusi PDRB ADHB KabKota,52,Produk Domestik Regional Bruto (Kabupaten/Kota),0,#NUM!,"2021: Angka Sementara, 2022: Angka Sangat Sementara
+",7,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,14,3    
+10564,72,Penduduk Menurut Jenis Kelamin dan Kabupaten/Kota,40,Gender,0,#NUM!,"Tahun 2020 : Hasil Sensus Penduduk 2020 (September 2020)/The result of The 2020 Indonesian census (September 2020)
+
+Tahun 2021-2023:
+Hasil Proyeksi Penduduk Interim 2020�2023 (Pertengahan tahun/Juni)",7,Jiwa,1,bar,1400,45-46,"Laki-Laki Perempuan	",1,agregat,14,1    
+10565,73,Penduduk Menurut Jenis Kelamin dan Kelompok Umur Provinsi Riau,40,Gender,0,#NUM!,"Hasil Sensus Penduduk 2020 (September 2020)/The result of The 2020 Indonesian census (September 2020)
+
+Tahun 2021-2023 :
+Hasil Proyeksi Penduduk Interim 2020�2023 (Pertengahan tahun/Juni)",10,Jiwa,1,bar,1400,45-46,"Laki-Laki Perempuan	",1,agregat,14,1    
+10466,75,Gini Rasio ,23,Kemiskinan,0,#NUM!,"Sumber : BPS, Susenas
+
+Tahun 2006-2010, Susenas Panel (Maret)
+Tahun 2011-2016, Susenas Modul Konsumsi (Maret &amp; September)",1,Tidak Ada Satuan,3,line,1400,0,Tidak Ada,0,Tidak Ada,15,4    
+10612,76,Luas Wilayah Provinsi Riau,153,Geografi,0,#NUM!,NaN,7,KM2,1,bar,1400,0,Tidak Ada,0,Tidak Ada,7,1    
+10467,77,Jumlah Penduduk Miskin,23,Kemiskinan,0,#NUM!,NaN,7,Ribu Jiwa,1,bar,1400,0,Tidak Ada,0,Tidak Ada,14,1    
+10616,85,Indeks Tendensi Konsumen,154,ITB-ITK,0,#NUM!,NaN,1,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,9,4    
+10566,86,Indeks Pembangunan Gender,40,Gender,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,7,4    
+10502,88,Angka Partisipasi Murni (APM),28,Pendidikan,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,13,4    
+10388,89,TPT (semester),6,Tenaga Kerja,0,#NUM!,NaN,1,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,8,4    
+10389,90,TPAK (semesteran),6,Tenaga Kerja,0,#NUM!,NaN,1,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada7,8,4    
+10435,91,Neraca Perdagangan Luar Negeri,8,Ekspor-Impor,0,#NUM!,NaN,13,Ribu (US $),1,bar,1400,0,Tidak Ada,0,Tidak Ada,17,4    
+10379,94,Pengeluaran Rata-rata per Kapita Sebulan menurut Kelompok Makanan,5,Konsumsi dan Pengeluaran,0,#NUM!,NaN,14,Rupiah,1,bar,1400,0,Tidak Ada,0,Tidak Ada,8,1    
+10380,95,Pengeluaran Rata-rata per Kapita Sebulan menurut Kelompok Non Makanan,5,Konsumsi dan Pengeluaran,0,#NUM!,NaN,15,Rupiah,1,bar,1400,0,Tidak Ada,0,Tidak Ada,8,1    
+10468,97,Garis Kemiskinan,23,Kemiskinan,0,#NUM!,NaN,7,Rp/Kapita/Bulan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,14,1    
+10469,98,Indeks Kedalaman Kemiskinan (P1),23,Kemiskinan,0,#NUM!,NaN,7,Tidak Ada Satuan,2,pie,1400,0,Tidak Ada,0,Tidak Ada,14,4    
+10470,99,Indeks Keparahan Kemiskinan (P2),23,Kemiskinan,0,#NUM!,NaN,7,Tidak Ada Satuan,2,pie,1400,0,Tidak Ada,0,Tidak Ada,14,4    
+10567,102,Angka Harapan Hidup-JK,40,Gender,0,#NUM!,NaN,17,Tidak Ada Satuan,1,bar,1400,0 dan 62,Tidak Ada Riau ,3,bebas ,11,4    
+10436,104,Perkembangan Import,8,Ekspor-Impor,0,#NUM!,NaN,18,Ribu (US $),1,bar,1400,0,Tidak Ada,0,Tidak Ada,17,1    
+10471,105,Persentase Penduduk Miskin,23,Kemiskinan,0,#NUM!,NaN,1,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,6,4    
+10560,107,Indeks Demokrasi Indonesia,34,Politik dan Keamanan,0,#NUM!,NaN,1,Tidak Ada Satuan,1,bar,1400,375,Capaian,0,Tidak Ada,2,4    
+10580,108,Laju Pertumbuhan ADHK Kabupaten Kota,52,Produk Domestik Regional Bruto (Kabupaten/Kota),0,#NUM!,"2021: Angka Sementara , 2022: Angka Sangat Sementara",7,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,13,4    
+10568,109,Indeks Pemberdayaan Gender (IDG) ,40,Gender,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,11,4    
+10503,111,Jumlah Sekolah TK ,28,Pendidikan,0,#NUM!,"Ket : 
+2019 = T.A. 2018/2019, 
+2020 = T.A. 2019/2020
+Data Semester Ganjil
+
+Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,3,1    
+10448,112,Jumlah Rumah Tangga,12,Kependudukan,0,#NUM!,Tahun 2021-2023 : Hasil Proyeksi Penduduk Interim 2020�2023 (Pertengahan tahun/Juni),7,Rumah Tangga,1,bar,1400,0,Tidak Ada,0,Tidak Ada,14,1    
+10391,114,Pencari Kerja,6,Tenaga Kerja,0,#NUM!,NaN,19,Jiwa,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,3,1    
+10601,120,Jumlah Anggota DPRD,101,Pemerintahan,0,#NUM!,NaN,7,Tidak Ada Satuan,2,pie,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,4,1    
+10490,121,Jumlah Jemaah Haji,27,Sosial Budaya,0,#NUM!,NaN,7,Tidak Ada Satuan,3,line,1400,0,Tidak Ada,0,Tidak Ada,4,1    
+10491,122,Jumlah Pernikahan,27,Sosial Budaya,0,#NUM!,NaN,7,Tidak Ada Satuan,3,line,1400,0,Tidak Ada,0,Tidak Ada,5,1    
+10492,123,Jumlah Perceraian,27,Sosial Budaya,0,#NUM!,NaN,7,Tidak Ada Satuan,3,line,1400,76-78,Cerai Talak Cerai Gugat Jumlah,1,agregat,5,1    
+10493,124,Jumlah Tempat Peribadatan,27,Sosial Budaya,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,79-84,"Masijd Mushola Gereja Protestan Gereja Katholik Pura Vihara	",1,agregat,3,1    
+10494,125,Jumlah Kejadian Bencana Alam,27,Sosial Budaya,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,88-94,Tanah Longsor Banjir Banjir Bandang Kebakaran Hutan dan Lahan Angin Puting Beliung Angin Puting Beliung,1,agregat,3,1    
+10495,126,Jumlah Kerusakan Rumah yang Diakibatkan Bencana Alam,27,Sosial Budaya,0,#NUM!,NaN,7,Tidak Ada Satuan,3,line,1400,96-99,Rusak Berat  Rusak Sedang Rusak Ringan Terendam,1,agregat,5,1    
+10496,127,Jumlah Desa yg Mengalami Bencana Alam,27,Sosial Budaya,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,100-102," Banjir Gempa Bumi Tanah Longsor	",1,agregat,6,1    
+10497,128,Jumlah Penerima Bantuan (kepala keluarga),27,Sosial Budaya,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,103-104,Rencana Realisasi,2,perbandingan ,4,1    
+10498,130,Jumlah Anggaran Bantuan Sosial Pangan,27,Sosial Budaya,0,#NUM!,NaN,7,Rupiah,1,bar,1400,103-104,Rencana Realisasi,2,perbandingan ,4,1    
+10396,131,Angkatan Kerja Menurut Kelompok Umur,6,Tenaga Kerja,0,#NUM!,NaN,20,Tidak Ada Satuan,1,bar,1400,135-137,Bekerja Pengangguran Jumlah,1,agregat,5,1    
+10397,132,Bukan Angkatan Kerja Menurut Kelompok Umur,6,Tenaga Kerja,0,#NUM!,NaN,20,Tidak Ada Satuan,1,bar,1400,108-111,Sekolah Mengurus Rumah Tangga Lainnya Jumlah,1,agregat,5,1    
+10605,138,Suhu,151,Iklim,0,#NUM!,Sumber : Stamet SSK Pekanbaru,21,Tidak Ada Satuan,1,bar,1400,112-114,Minimum Rata-Rata Maksimum,3,bebas ,4,5    
+10606,139,Kelembaban,151,Iklim,0,#NUM!,Sumber : Stamet SSK Pekanbaru,21,Persen,1,bar,1400,112-114,Minimum Rata-Rata Maksimum,3,bebas ,4,5    
+10607,141,Kecepatan Angin,151,Iklim,0,#NUM!,Sumber : Stamet SSK Pekanbaru,21,m/det,1,bar,1400,112-114,Minimum Rata-Rata Maksimum,3,bebas ,4,5    
+10608,143,Tekanan Udara,151,Iklim,0,#NUM!,Sumber : Stamet SSK Pekanbaru,21,mb,1,bar,1400,112-114,Minimum Rata-Rata Maksimum,3,bebas ,4,5    
+10609,145,Curah Hujan,151,Iklim,0,#NUM!,Sumber : Stamet SSK Pekanbaru,21,mm,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,5    
+10398,146,Persentase Angkatan Kerja  terhadap Penduduk Usia Kerja menurut Kelompok Umur,6,Tenaga Kerja,0,#NUM!,NaN,20,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,3,4    
+10400,149,Angkatan Kerja Menurut Kabupaten Kota,6,Tenaga Kerja,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,115-117,Bekerja Pengangguran Jumlah,1,agregat,5,1    
+10401,151,Bukan Angkatan kerja Menurut Kabupaten Kota,6,Tenaga Kerja,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,118-121,Sekolah Mengurus Rumah Tangga Lainnya Jumlah,1,agregat,5,1    
+10544,152,Jumlah Desa/Kelurahan Yang Memiliki Sarana Kesehatan,30,Kesehatan,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,122-127,Rumah Sakit Rumah Sakit Bersalin Poliklinik Puskesmas Puskesmas Pembantu Apotek,1,agregat,5,1    
+10545,153,Distribusi Persentase Wanita Pernah Kawin yang Melahirkan Hidup,30,Kesehatan,0,#NUM!,NaN,7,Persen,1,bar,1400,128-133,Dokter Bidan Tenaga Kesehatan Lain Dukun Lainnya Jumlah,1,agregat,5,3    
+10546,154,Jumlah Tenaga Kesehatan,30,Kesehatan,0,#NUM!,NaN,7,Jiwa,1,bar,1400,32-36 dan 134-138,"Dokter Dokter Gigi Perawat Bidan Tenaga Kefarmasian Tenaga Kesehatan Masyarakat Tenaga Kesehatan Tenaga Gizi Ahli Teknologi Laboratorium Medik	",1,agregat,2,1    
+10598,156,Produksi Kayu Bulat,60,Kehutanan,0,#NUM!,Kementerian Lingkungan Hidup dan Kehutanan,22,M3,1,bar,1400,0,Tidak Ada,0,Tidak Ada,8,1    
+10599,160,Produksi Kayu Olahan,60,Kehutanan,0,#NUM!,Kementerian Lingkungan Hidup dan Kehutanan,23,M3,1,bar,1400,0,Tidak Ada,0,Tidak Ada,8,1    
+10547,161,Persentase Penduduk yang Mempunyai Keluhan Kesehatan Selama Sebulan Terakhir ,30,Kesehatan,0,#NUM!,NaN,7,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,7,4    
+10548,162,Jumlah Kasus Penyakit di Provinsi Riau,30,Kesehatan,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,139-144,Angka Penemuan TBC (%) Angka Keberhasilan Pengobatan TBC (%) Jumlah Kasus Baru AIDS Penemuan Kasus Baru Kusta per 100.000 Penduduk Angka Kesakitan Malaria per 1.000 Penduduk Angka Kesakitan DBD per 100.000 Penduduk,3,bebas ,4,5    
+10549,164,Jumlah Sarana Kesehatan,30,Kesehatan,0,#NUM!,NaN,7,Unit,1,bar,1400,145-150,Rumah Sakit Umum Rumah Sakit Khusus Puskesmas Rawat Inap Puskesmas Rawat Jalan Klinik Pratama Posyandu,1,agregat,4,1    
+10550,165,Persentase Penduduk yang Mempunyai Keluhan Kesehatan dan Berobat Jalan Selama Sebulan Terakhir,30,Kesehatan,0,#NUM!,NaN,7,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,8,4    
+10600,166,"	Luas Kawasan Hutan dan Konservasi Perairan",60,Kehutanan,0,#NUM!,Dinas Lingkungan Hidup dan Kehutanan Provinsi Riau,7,Hektar,1,bar,1400,151-156,Hutan Lindung Suaka Alam dan Pelestarian Alam Hutan Produksi Terbatas Hutan Produksi Tetap Hutan Produksi Dapat dikonversi Jumlah Luas Hutan,1,agregat,3,1    
+10551,168,Distribusi Persentase Penduduk yang Mempunyai Keluhan Kesehatan Selama Sebulan Terakhir dan Tidak Berobat Jalan,30,Kesehatan,0,#NUM!,NaN,7,Persen,1,bar,1400,157-165,Tidak punya biaya berobat Tidak ada biaya transportasi  Tidak ada sarana transportasi Waktu tunggu pelayanan lama Mengobati sendiri Tidak ada yang mendampingi Merasa tidak perlu Lainnya Jumlah ,1,agregat,2,3    
+10473,171,Populasi Ternak,24,Peternakan,0,#NUM!,Direktorat Peternakan dan Kesehatan Hewan Provinsi Riau,6,Ekor,1,bar,1400,174-180,Sapi Perah Sapi Potong Kerbau Kuda Kambing Domba Babi,1,agregat,5,1    
+10553,172,Persentase Penduduk yang Memiliki Jaminan Kesehatan,30,Kesehatan,0,#NUM!,NaN,7,Persen,1,bar,1400,181-185,BPJS PBI BPJS Non PBI Jamkesda Asuransi Swasta Perusahaan/Kantor,3,bebas ,5,4    
+10554,173,"Jumlah Ibu Hamil, Melakukan Kunjungan K1, Melakukan Kunjungan K4, Kurang Energi Kronis (KEK), dan Mendapat Tablet Zat Besi (Fe)",30,Kesehatan,0,#NUM!,NaN,24,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,7,5    
+10474,176,Populasi Unggas,24,Peternakan,0,#NUM!,Direktorat Peternakan dan Kesehatan Hewan Provinsi Riau,6,Ekor,1,bar,1400,186-189,Ayam Kampung Ayam Petelur Ayam Pedaging Itik/Itik Manila,1,agregat,5,1    
+10555,177,Jumlah Remaja Usia 15-24 Tahun yang Mendapat Penyuluhan,30,Kesehatan,0,#NUM!,NaN,7,Jiwa,1,bar,1400,190-192,Penyuluhan Kespro Penyuluhan HIV/AIDS Penyuluhan KB,1,agregat,3,1    
+10556,178,Jumlah Klinik Keluarga Berencana (KKB) dan Pos Pelayanan Keluarga Berencana Desa (PPKBD),30,Kesehatan,0,#NUM!,NaN,7,Unit,1,bar,1400,193-194,KKB PPKBD,1,agregat,4,1    
+10557,179,Peserta KB Aktif berdasarkan Alat Kontrasepsi,30,Kesehatan,0,#NUM!,NaN,7,Jiwa,1,bar,1400,195-202,IUD MOW KONDOM IMPLANT SUNTIKAN PIL JUMLAH,1,agregat,4,1    
+10558,181,Jumlah Keluarga Menurut Klasifikasi Keluarga,30,Kesehatan,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,203-206,Pra Sejahtera Keluarga Sejahtera I Keluarga Sejahtera II Jumlah,1,agregat,2,1    
+10559,182,Jumlah Pasangan Usia Subur,30,Kesehatan,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,1    
+10610,183,Hari Hujan,151,Iklim,0,#NUM!,Sumber : Stamet SSK Pekanbaru,21,Hari,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,5    
+10611,185,Penyinaran Matahari,151,Iklim,0,#NUM!,Sumber : Stamet SSK Pekanbaru,21,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,5    
+10402,186,Persentase Bekerja terhadap Angkatan Kerja,6,Tenaga Kerja,0,#NUM!,NaN,7,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,4    
+10403,187,Persentase Angkatan Kerja terhadap Penduduk Usia Kerja,6,Tenaga Kerja,0,#NUM!,NaN,7,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,3,4    
+10475,189,Produksi Daging Ternak,24,Peternakan,0,#NUM!,Direktorat Peternakan dan Kesehatan Hewan Provinsi Riau,6,KG,1,bar,1400,175-180,Sapi Potong Kerbau Kuda Kambing Domba Babi,1,agregat,5,1    
+10476,190,Produksi Daging Unggas,24,Peternakan,0,#NUM!,Direktorat Peternakan dan Kesehatan Hewan Provinsi Riau,6,KG,1,bar,1400,186-189,Ayam Kampung Ayam Petelur Ayam Pedaging Itik/Itik Manila,1,agregat,5,1    
+10477,192,Produksi Telur Unggas dan Susu Sapi,24,Peternakan,0,#NUM!,Direktorat Peternakan dan Kesehatan Hewan Provinsi Riau,6,Ton,1,bar,1400,207-210,Ayam Kampung Ayam Petelur Itik Sapi Perah,1,agregat,5,1    
+10404,193,Jumlah Angkatan Kerja menurut Pendidikan Tertinggi yang ditamatkan,6,Tenaga Kerja,0,#NUM!,NaN,25,Tidak Ada Satuan,1,bar,1400,105-107,Bekerja Pengangguran Jumlah,1,agregat,3,1    
+10405,195,Jumlah Bukan Angkatan Kerja menurut Pendidikan Tertinggi yang ditamatkan,6,Tenaga Kerja,0,#NUM!,NaN,25,Tidak Ada Satuan,1,bar,1400,108-111,Sekolah Mengurus Rumah Tangga Lainnya Jumlah,1,agregat,3,1    
+10406,200,Persentase Bekerja terhadap Angkatan Kerja menurut Pendidikan,6,Tenaga Kerja,0,#NUM!,NaN,25,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,4    
+10407,202,Persentase Angkatan Kerja terhadap Penduduk Usia Kerja menurut Pendidikan,6,Tenaga Kerja,0,#NUM!,NaN,25,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,3,4    
+10582,205,Luas Panen dan Produktivitas,53,Tanaman Pangan,0,#NUM!,"Data tahun 2021 merupakan Angka Sementara, BPS, Laporan Statistik Pertanian (SP) Tanaman Pangan",6,Hektar,1,bar,1400,222-223,Luas Panen Produktivitas,2,perbandingan ,4,1    
+10583,206,Produksi Padi dan Beras,53,Tanaman Pangan,0,#NUM!,"Data tahun 2021 merupakan Angka Sementara, BPS, Laporan Statistik Pertanian (SP) Tanaman Pangan/",6,Ton,1,bar,1400,224-225,Produksi Padi Produksi Padi Setara Beras ,2,perbandingan ,4,1    
+10584,207,Produksi Jagung dan Kedelai,53,Tanaman Pangan,0,#NUM!,"BPS, Laporan Statistik Pertanian (SP) Tanaman Pangan",6,Ton,1,bar,1400,226-227,Produksi Jagung (ton) Produksi Kedelai (ton),1,agregat,1,1    
+10409,208,Penduduk Berumur 15 Tahun Ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Status Pekerjaan Utama dan Lapangan Pekerjaan Utama,6,Tenaga Kerja,0,#NUM!,"1. Pertanian, Kehutanan, Perikanan
+2. Pertambangan dan Penggalian; Industri Pengolahan; Pengadaan Listrik dan Gas; Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang; Konstruksi
+3. Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi
+dan Komunikasi; Jasa Keuangan dan Asuransi; Real Estat; Jasa Perusahaan; Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib; Jasa
+Pendidikan; Jasa Kesehatan dan Kegiatan Sosial; Jasa Lainnya",27,Tahun,1,bar,1400,219-221,1 2 3 ,1,agregat,3,1    
+10410,209,Penduduk Berumur 15 Tahun Ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Status Pekerjaan Utama dan Jenis Kelamin,6,Tenaga Kerja,0,#NUM!,NaN,27,Tidak Ada Satuan,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,3,1    
+10585,217,Luas Areal Tanaman Perkebunan,54,Perkebunan,0,#NUM!,Dinas Perkebunan,6,Hektar,1,bar,1400,228-232,Kelapa Sawit Kelapa Karet Kopi Kakao,1,agregat,5,1    
+10586,220,Produksi Perkebunan,54,Perkebunan,0,#NUM!,Dinas Perkebunan,6,Ton,1,bar,1400,228-232,Kelapa Sawit Kelapa Karet Kopi Kakao,1,agregat,5,1    
+10411,221,Penduduk Berumur 15 Tahun ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Jumlah Jam Kerja pada Pekerjaan Utama dan Lapangan Pekerjaan Utama,6,Tenaga Kerja,0,#NUM!,"1. Pertanian, Kehutanan, Perikanan
+2. Pertambangan dan Penggalian; Industri Pengolahan; Pengadaan Listrik dan Gas; Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang; Konstruksi
+3. Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi
+dan Komunikasi; Jasa Keuangan dan Asuransi; Real Estat; Jasa Perusahaan; Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib; Jasa
+Pendidikan; Jasa Kesehatan dan Kegiatan Sosial; Jasa Lainnya",28,Tidak Ada Satuan,1,bar,1400,219-221,1 2 3 ,1,agregat,3,1    
+10412,222,Penduduk Berumur 15 Tahun ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Lapangan Pekerjaan Utama dan Pendidikan Tertinggi yang Ditamatkan,6,Tenaga Kerja,0,#NUM!,"1. Pertanian, Kehutanan, Perikanan 
+2. Pertambangan dan Penggalian; Industri Pengolahan; Pengadaan Listrik dan Gas; Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang; Konstruksi
+3. Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi
+dan Komunikasi; Jasa Keuangan dan Asuransi; Real Estat; Jasa Perusahaan; Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib; Jasa
+Pendidikan; Jasa Kesehatan dan Kegiatan Sosial; Jasa Lainnya",29,Tidak Ada Satuan,1,bar,1400,233-237,SD/MI SMP/MTS SMA/SMK/MA Perguruan Tinggi Jumlah,1,agregat,3,1    
+10413,223,Penduduk Berumur 15 Tahun Ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Jumlah Jam Kerja Pada Pekerjaan Utama dan Jenis Kelamin,6,Tenaga Kerja,0,#NUM!,0 = Sementara tidak bekerja,28,Tidak Ada Satuan,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,3,1    
+10414,224,Penduduk Berumur 15 Tahun Ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Jumlah Jam Kerja Seluruhnya dan Jenis Kelamin,6,Tenaga Kerja,0,#NUM!,0 = Sementara tidak bekerja,28,Tidak Ada Satuan,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,3,1    
+10415,225,Penduduk Berumur 15 Tahun ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Kelompok Umur dan Jumlah Jam Kerja Seluruhnya,6,Tenaga Kerja,0,#NUM!,0 = Sementara tidak bekerja,20,Tidak Ada Satuan,1,bar,1400,238-242,Umur,1,agregat,3,1    
+10416,226,Penduduk Berumur 15 Tahun Keatas yang Bekerja Selama Seminggu yang Lalu Menurut Kelompok Umur dan Jenis Kelamin,6,Tenaga Kerja,0,#NUM!,NaN,20,Tidak Ada Satuan,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,3,1    
+10417,227,Penduduk Berumur 15 Tahun ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Status Pekerjaan Utama dan Pendidikan Tertinggi yang Ditamatkan,6,Tenaga Kerja,0,#NUM!,NaN,27,Tidak Ada Satuan,1,bar,1400,233-237,SD/MI SMP/MTS SMA/SMK/MA Perguruan Tinggi Jumlah,1,agregat,3,1    
+10418,228,Penduduk Berumur 15 Tahun ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Kabupaten/Kota dan Lapangan Pekerjaan Utama,6,Tenaga Kerja,0,#NUM!,"1. Pertanian, Kehutanan, Perikanan 2. Pertambangan dan Penggalian; Industri Pengolahan; Pengadaan Listrik dan Gas; Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang; Konstruksi 
+3. Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi dan Komunikasi; Jasa Keuangan dan Asuransi; Real Estat; Jasa Perusahaan; Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib; Jasa Pendidikan; Jasa Kesehatan dan Kegiatan Sosial; Jasa Lainnya",7,Tidak Ada Satuan,1,bar,1400,219-221,1 2 3 ,1,agregat,3,1    
+10419,229,Penduduk Berumur 15 Tahun Ke Atas yang Bekerja Selama Seminggu yang Lalu Menurut Lapangan Pekerjaan Utama dan Jenis Kelamin,6,Tenaga Kerja,0,#NUM!,"1. Pertanian, Kehutanan, Perikanan
+2. Pertambangan dan Penggalian; Industri Pengolahan; Pengadaan Listrik dan Gas; Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang; Konstruksi
+3. Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi dan Komunikasi; Jasa Keuangan dan Asuransi; Real Estat; Jasa Perusahaan; Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib; Jasa Pendidikan; Jasa Kesehatan dan Kegiatan Sosial; Jasa Lainnya.",29,Tidak Ada Satuan,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,3,1    
+10454,230,Realisasi Pemerintah,13,Keuangan,0,#NUM!,Sumber : Survei Statistik Keuangan Daerah,7,Ribu Rupiah,1,bar,1400,243-244,Pendapatan Belanja,2,perbandingan ,3,1    
+10587,232,Luas Panen Tanaman Sayuran dan Buah�Buahan Semusim,55,Hortikultura,0,#NUM!,"BPS, Statistik Pertanian Hortikultura SPH-SBS",30,Hektar,1,bar,1400,0,Tidak Ada,0,Tidak Ada,7,1    
+10588,236,Luas Panen Tanaman Hias,55,Hortikultura,0,#NUM!,"BPS, Statistik Pertanian Hortikultura SPH-TH",31,M2,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,1    
+10589,238,Produksi Tanaman Hias,55,Hortikultura,0,#NUM!,"BPS, Statistik Pertanian Hortikultura SPH-TH",31,Tangkai,1,bar,1400,0,Tidak Ada,0,Tidak Ada,7,1    
+10592,248,Produksi Perikanan Tangkap di Perairan Umum,56,Perikanan,0,#NUM!,Dinas Kelautan dan Perikanan Provinsi Riau,6,Ton,1,bar,1400,256-257,Ikan Udang,1,agregat,4,1    
+10593,249,Produksi Perikanan Budidaya,56,Perikanan,0,#NUM!,Dinas Kelautan dan Perikanan Provinsi Riau,6,Ton,1,bar,1400,248-255,Gurame  Patin Lele Nila Ikan Mas Kakap Bandeng Udang,1,agregat,4,1    
+10594,250,Produksi Perikanan Tangkap,56,Perikanan,0,#NUM!,Dinas Kelautan dan Perikanan Provinsi Riau,7,Ton,1,bar,1400,258-260,Perikanan Tangkap di Laut  Perikanan Perairan Umum Daratan Perikanan Tangkap,1,agregat,4,1    
+10595,252,Nilai Produksi Perikanan Tangkap,56,Perikanan,0,#NUM!,Dinas Kelautan dan Perikanan Provinsi Riau,6,Ribu Rupiah,1,bar,1400,258-260,Perikanan Tangkap di Laut  Perikanan Perairan Umum Daratan Perikanan Tangkap,1,agregat,4,1    
+10590,253,Luas Panen Tanaman Biofarmaka,55,Hortikultura,0,#NUM!,"BPS, Statistik Pertanian Hortikultura SPH-TBF",42,M2,1,bar,1400,0,Tidak Ada,0,Tidak Ada,6,1    
+10591,254,Produksi Tanaman Biofarmaka,55,Hortikultura,0,#NUM!,"BPS, Statistik Pertanian Hortikultura SPH-TBF",42,KG,1,bar,1400,0,Tidak Ada,0,Tidak Ada,7,1    
+10420,255,Pencari Kerja Terdaftar,6,Tenaga Kerja,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,3,1    
+10421,256,Lowongan Kerja Terdaftar,6,Tenaga Kerja,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,3,1    
+10422,257,Penempatan/Pemenuhan Tenaga Kerja,6,Tenaga Kerja,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,3,1    
+10596,258,Produksi Perikanan Budidaya Menurut Jenis Budidaya,56,Perikanan,0,#NUM!,Dinas Kelautan dan Perikanan Provinsi Riau,6,Ton,1,bar,1400,261-269,Jaring Apung Laut Jaring Apung Tawar Jaring Tancap Tawar Karamba Kolam Air Tenang Laut Lainnya Minapadi Sawah Tambak Sederhana  Tambak Semi Intensif,1,agregat,4,1    
+10423,260,Rata-rata Upah/Gaji Sebulan Pekerja Formal,6,Tenaga Kerja,0,#NUM!,"1. Pertanian, Kehutanan, Perikanan 2. Pertambangan dan Penggalian; Industri Pengolahan; Pengadaan Listrik dan Gas; Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang; Konstruksi 3. Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi dan Komunikasi; Jasa Keuangan dan Asuransi; Real Estat; Jasa Perusahaan; Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib; Jasa Pendidikan; Jasa Kesehatan dan Kegiatan Sosial; Jasa Lainnya",7,Rupiah,1,bar,1400,219-221,1 2 3 ,1,agregat,1,2    
+10424,261,Rata-rata Pendapatan Bersih Sebulan Pekerja Informal,6,Tenaga Kerja,0,#NUM!,"1. Pertanian, Kehutanan, Perikanan 2. Pertambangan dan Penggalian; Industri Pengolahan; Pengadaan Listrik dan Gas; Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang; Konstruksi 3. Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi dan Komunikasi; Jasa Keuangan dan Asuransi; Real Estat; Jasa Perusahaan; Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib; Jasa Pendidikan; Jasa Kesehatan dan Kegiatan Sosial; Jasa Lainnya",7,Rupiah,1,bar,1400,219-221,1 2 3 ,1,agregat,1,2    
+10597,262,Produksi Perikanan Budidaya Menurut Jenis Kegiatan,56,Perikanan,0,#NUM!,Dinas Kelautan dan Perikanan Provinsi Riau,6,Tidak Ada Satuan,1,bar,1400,270-272,Pembesaran Pembenihan Ikan Hias,1,agregat,4,1    
+10425,265,Rata-rata Pendapatan Bersih Sebulan Pekerja Informal Menurut Kabupaten/Kota dan Pendidikan Tertinggi yang Ditamatkan,6,Tenaga Kerja,0,#NUM!,NaN,7,Rupiah,1,bar,1400,273-277,Tidak Pernah Sekolah/ Belum Tamat SD SD/MI SMP/MTs SMA ke Atas Jumlah,1,agregat,1,2    
+10499,269,Jumlah Korban yang Diakibatkan Bencana Banjir,27,Sosial Budaya,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,278 280,Meninggal dan Hilang Terdampak dan Mengungsi,1,agregat,4,1    
+10561,270,Jumlah Kejahatan yang Dilaporkan,34,Politik dan Keamanan,0,#NUM!,-,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,6,1    
+10562,271,Risiko Penduduk Terjadi Tindak Pidana,34,Politik dan Keamanan,0,#NUM!,Biasanya dinyatakan dalam setiap 100.000 penduduk.,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,6,1    
+10504,272,Jumlah Guru TK,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,3,1    
+10563,274,Persentase penyelesaian kejahatan,34,Politik dan Keamanan,0,#NUM!,"Suatu tindak kejahatan dinyatakan sebagai kasus yang selesai di tingkat kepolisian, apabila:
+1.berkas perkaranya sudah siap untuk diserahkan atau telah diserahkan kepada kejaksaan;
+2.dalam hal delik aduan, pengaduannya dicabut dalam tenggang waktu yang telah ditentukan menurut undang-undang;
+3.telah diselesaikan oleh kepolisian berdasarkan azas plichmatigheid (kewajiban berdasarkan kewenangan hukum);
+4.kasus yang dimaksud tidak termasuk kompetensi kepolisian;
+5.tersangka meninggal dunia;
+6.kasus kadaluwarsa.",7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,6,1    
+10505,275,Jumlah Murid TK,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,3,1    
+10439,276,Jumlah Perusahaan pada Industri Besar dan Sedang,9,Industri,0,#NUM!,-,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,1    
+10440,277,Jumlah Tenaga Kerja Pada Industri Besar dan sedang,9,Industri,0,#NUM!,-,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,1    
+10441,278,Nilai Produksi pada Industri Besar dan Sedang,9,Industri,0,#NUM!,-,7,Ribu Rupiah,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,1    
+10602,279,Jumlah Pegawai Negeri Sipil,101,Pemerintahan,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,3,1    
+10506,280,Jumlah Sekolah RA,28,Pendidikan,0,#NUM!,"Nb : 2018 = T.A. 2017/2018,
+2019 = T.A. 2018/2019, 
+Odd Semester Data Source :Ministry of Religious Affairs",7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,1    
+10507,281,Jumlah Guru RA,28,Pendidikan,0,#NUM!,"Ket : 
+2018 = T.A. 2017/2018,
+2019 = T.A. 2018/2019, Data Semester Ganjil Sumber :Kementerian Agama",7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,1    
+10508,282,Jumlah Murid RA,28,Pendidikan,0,#NUM!,"Ket : 2018 = T.A. 2017/2018, 2019 = T.A. 2018/2019, Data Semester Ganjil Sumber :Kementerian Agama",7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,1    
+10509,283,Jumlah Sekolah SD,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10510,284,Jumlah Guru SD,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10511,285,Jumlah Murid SD,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10512,286,Jumlah Sekolah MI,28,Pendidikan,0,#NUM!,"Ket : 2018 = T.A. 2017/2018, 2019 = T.A. 2018/2019, Data Semester Ganjil Sumber :Kementerian Agama",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,5,1    
+10513,287,Jumlah Guru MI,28,Pendidikan,0,#NUM!,"Ket : 2018 = T.A. 2017/2018, 2019 = T.A. 2018/2019, Data Semester Ganjil Sumber :Kementerian Agama",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,3,1    
+10514,288,Jumlah Murid MI,28,Pendidikan,0,#NUM!,"Ket : 2018 = T.A. 2017/2018, 2019 = T.A. 2018/2019, Data Semester Ganjil Sumber :Kementerian Agama",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,5,1    
+10515,289,Jumlah Sekolah SMP,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10516,290,Jumlah Guru SMP,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10517,291,Jumlah Murid SMP,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10518,292,Jumlah Sekolah MTS,28,Pendidikan,0,#NUM!,"Ket : 2018 = T.A. 2017/2018, 2019 = T.A. 2018/2019, Data Semester Ganjil Sumber :Kementerian Agama",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,5,1    
+10519,293,Jumlah Guru MTS,28,Pendidikan,0,#NUM!,"Ket : 2018 = T.A. 2017/2018, 2019 = T.A. 2018/2019, Data Semester Ganjil Sumber :Kementerian Agama",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,5,1    
+10520,294,Jumlah Murid MTS,28,Pendidikan,0,#NUM!,"Ket : 2018 = T.A. 2017/2018, 2019 = T.A. 2018/2019, Data Semester Ganjil Sumber :Kementerian Agama",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,5,1    
+10521,295,Jumlah Sekolah SMA,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10522,296,Jumlah Guru SMA,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10523,297,Jumlah Murid SMA,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10524,298,Jumlah Sekolah SMK,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10525,299,Jumlah Guru SMK,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10526,300,Jumlah Murid SMK,28,Pendidikan,0,#NUM!,"Ket : 2019 = T.A. 2018/2019, 2020 = T.A. 2019/2020 Data Semester Ganjil Sumber :Kementerian Pendidikan dan Kebudayaan
+",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,4,1    
+10527,301,Jumlah Sekolah MA,28,Pendidikan,0,#NUM!,"Ket : 2018 = T.A. 2017/2018, 2019 = T.A. 2018/2019, Data Semester Ganjil Sumber :Kementerian Agama",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,5,1    
+10528,302,Jumlah Guru MA,28,Pendidikan,0,#NUM!,"Ket : 2018 = T.A. 2017/2018, 2019 = T.A. 2018/2019, Data Semester Ganjil Sumber :Kementerian Agama",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,5,1    
+10529,303,Jumlah Murid MA,28,Pendidikan,0,#NUM!,"Ket : 2018 = T.A. 2017/2018, 2019 = T.A. 2018/2019, Data Semester Ganjil Sumber :Kementerian Agama",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,5,1    
+10530,304,Jumlah Perguruan Tinggi Ristek,28,Pendidikan,0,#NUM!,"Ket : Termasuk Institut, Sekolah Tinggi, Akademi, dan Politeknik
+
+Sumber : Kementerian Riset, Teknologi dan Pendidikan Tinggi",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,5,1    
+10531,305,Jumlah Mahasiswa (Ristek),28,Pendidikan,0,#NUM!,"Ket : Termasuk Institut, Sekolah Tinggi, Akademi, dan Politeknik Sumber : Kementerian Riset, Teknologi dan Pendidikan Tinggi",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,5,1    
+10532,306,Jumlah Tenaga Pendidik Ristek,28,Pendidikan,0,#NUM!,"Ket : Termasuk Institut, Sekolah Tinggi, Akademi, dan Politeknik Sumber : Kementerian Riset, Teknologi dan Pendidikan Tinggi",7,Tidak Ada Satuan,1,bar,1400,73-75,Negeri Swasta Jumlah,1,agregat,5,1    
+10367,307,Jumlah Kantor Pos,2,Komunikasi,0,#NUM!,Sumber : PT POS Indonesia Pekanbaru,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,1    
+10455,309,Jumlah Akomodasi Hotel Bintang,16,Pariwisata,0,#NUM!,"Sumber : BPS, Survei Hotel Tahunan (VHTL)",7,Tidak Ada Satuan,1,bar,1400,234-236,Akomodasi Kamar Tempat Tidur,2,perbandingan ,9,1    
+10456,310,Jumlah Akomodasi Hotel NonBintang,16,Pariwisata,0,#NUM!,"Sumber : BPS, Survei Hotel Tahunan (VHTL)",7,Tidak Ada Satuan,1,bar,1400,234-236,Akomodasi Kamar Tempat Tidur,2,perbandingan ,9,1    
+10449,311,Kepadatan Penduduk per km2,12,Kependudukan,0,#NUM!,"Catatan : 
+2010 = Hasil SP2020 (Mei)
+2019 = Hasil Proyeksi Penduduk Indonesia 2010-2035 (Pertengahan Tahun/Juni)",7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,4    
+10450,312,Rasio Jenis Kelamin,12,Kependudukan,0,#NUM!,"Catatan : 
+2010 = Hasil SP2010 (Mei)
+2019 = Hasil Proyeksi Penduduk Indonesia 2010-2035 (Pertengahan Tahun/Juni)",7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,4    
+10451,313,Jenis Kelamin,12,Kependudukan,0,#NUM!,NaN,10,Jiwa,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,1,agregat,4,1    
+10452,315,Rata-rata Banyaknya Anggota Rumahtangga,12,Kependudukan,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,2,1    
+10453,316,Persentase Penduduk,12,Kependudukan,0,#NUM!,"Catatan : 
+2010 = Hasil SP2020 (Mei)
+2019 = Hasil Proyeksi Penduduk Indonesia 2010-2035 (Pertengahan Tahun/Juni)",7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,3    
+10442,318,Jumlah Perusahaan pada Industri Mikro dan Kecil ,9,Industri,0,#NUM!,-,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,1    
+10443,319,Jumlah Tenaga Kerja pada Industri Mikro dan Kecil,9,Industri,0,#NUM!,-,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,1    
+10444,320,Nilai Produksi pada Industri Mikro dan Kecil,9,Industri,0,#NUM!,-,7,Ribu Rupiah,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,1    
+10457,324,Jumlah Rumah Makan/Restoran,16,Pariwisata,0,#NUM!,Sumber : Dinas Pariwisata Provinsi Riau,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,7,1    
+10428,325,Jumlah Pelanggan Listrik ,7,Energi,0,#NUM!,Sumber: PT PLN Persero Wilayah Riau dan Kepulauan Riau,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,6,1    
+10460,333,Jumlah Kendaraan Bermotor ,17,Transportasi,0,#NUM!,Sumber: Badan Pendapatan Daerah Provinsi Riau,7,Tidak Ada Satuan,1,bar,1400,287-290,Mobil Penumpang Bus Truk Sepeda Motor,1,agregat,3,1    
+10458,335,Persentase Tingkat Penghunian Kamar,16,Pariwisata,0,#NUM!,"Sumber : BPS, Survei Hotel Tahunan (VHTL)",21,Persen,1,bar,1400,291-292,Hotel Berbintang Hotel Nonbintang,1,agregat,4,4    
+10459,337,Rata-rata Lama Menginap Tamu,16,Pariwisata,0,#NUM!,"Sumber : BPS, Survei Hotel Tahunan (VHTL)",21,Hari,1,bar,1400,293-294,Tamu Asing Tamu Domestik,2,perbandingan ,3,4    
+10429,340,Daya Terpasang PT PLN,7,Energi,0,#NUM!,"Catatan/Note: (-)
+Tidak ada kWh batas antar Kabupaten
+
+Sumber: PT PLN Persero Wilayah Riau dan Kepulauan Riau",7,KW,1,bar,1400,0,Tidak Ada,0,Tidak Ada,2,1    
+10430,341,Produksi Listrik PT PLN,7,Energi,0,#NUM!,"Catatan/Note: (-)
+Tidak ada kWh batas antar Kabupaten
+
+Sumber: PT PLN Persero Wilayah Riau dan Kepulauan Riau",7,KWh,1,bar,1400,0,Tidak Ada,0,Tidak Ada,2,1    
+10431,342,Distribusi Listrik,7,Energi,0,#NUM!,"Catatan : (-) Tidak ada kWh batas antar Kabupaten
+
+Sumber : PT PLN Persero Wilayah Riau dan Kepulauan Riau",7,KWh,1,bar,1400,295-297,Listrik Terjual Dipakai Sendiri Susut/ Hilang,1,agregat,2,1    
+10461,344,Panjang Jalan Negara,17,Transportasi,0,#NUM!,"Catatan :
+Data tidak termasuk panjang jalan tol
+
+Berdasarkan Keputusan Menteri Pekerjaan Umum dan Perumahan Rakyat No. 248/KPTS/M/2015
+
+Sumber : Dinas Pekerjaan Umum, Penataan Ruang, Perumahan dan Kawasan Pemukiman Provinsi Riau ",7,km,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,1    
+10462,345,Panjang Jalan Provinsi,17,Transportasi,0,#NUM!,"Catatan : Data tidak termasuk panjang jalan tol Berdasarkan Keputusan Menteri Pekerjaan Umum dan Perumahan Rakyat No. 248/KPTS/M/2015 Sumber : Dinas Pekerjaan Umum, Penataan Ruang, Perumahan dan Kawasan Pemukiman Provinsi Riau",7,km,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,1    
+10533,346, Desa/Kelurahan yang Memiliki Fasilitas Sekolah ,28,Pendidikan,0,#NUM!,"Catatan : : 1
+Desa pada tabel ini termasuk Unit Permukiman Transmigrasi (UPT) yang masih dibina oleh kementerian terkait dan nagari di Provinsi Sumatera Barat
+
+Sumber : BPS, Pendataan Potensi Desa (Podes)",7,Tidak Ada Satuan,1,bar,1400,298-302,SD/MI SMP/MTS SMA/SMK/MA Perguruan Tinggi,1,agregat,5,1    
+10534,347,Persentase Penduduk Melek Huruf,28,Pendidikan,0,#NUM!,"Sumber : BPS, Survei Sosial Ekonomi Nasional (Susenas) Maret",48,Persen,1,bar,1400,51-53,Perkotaan Pedesaan,1,agregat,2,4    
+10627,348,Distribusi PDRB Lapangan Usaha Triwulan Provinsi,156,Produk Domestik Regional Bruto (Lapangan Usaha),0,#NUM!,"2022: Angka Sementara , 2023: Angka Sangat Sementara",8,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,15,3    
+10617,349,PDRB ADHB Pengeluaran Triwulanan Provinsi,155,Produk Domestik Regional Bruto (Pengeluaran),0,#NUM!,"2022: Angka Sementara , 2023: Angka Sangat Sementara ",9,Juta Rupiah,1,bar,1400,0,Tidak Ada,0,Tidak Ada,15,1    
+10618,350,PDRB ADHK Pengeluaran Triwulanan Provinsi,155,Produk Domestik Regional Bruto (Pengeluaran),0,#NUM!,"2022: Angka Sementara , 2023: Angka Sangat Sementara ",9,Juta Rupiah,1,bar,1400,0,Tidak Ada,0,Tidak Ada,15,1    
+10628,352,Laju Pertumbuhan (Q to Q)  PDRB Lapangan Usaha Triwulan Provinsi,156,Produk Domestik Regional Bruto (Lapangan Usaha),0,#NUM!,"2022: Angka Sementara , 2023: Angka Sangat Sementara",8,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,15,4    
+10619,353,Distribusi PDRB Pengeluaran Triwulan Provinsi,155,Produk Domestik Regional Bruto (Pengeluaran),0,#NUM!,"2021: Angka Sementara , 2022: Angka Sangat Sementara",9,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,15,3    
+10535,354,Distribusi Rumah Tangga Menurut Luas Lantai,29,Perumahan,0,#NUM!,-,7,Persen,1,bar,1400,303-307,Luas,1,agregat,4,4    
+10536,357,Distribusi Rumah Tangga Menurut  Sumber Air Minum,29,Perumahan,0,#NUM!,-,7,Persen,1,bar,1400,308-315,Leding Pompa Air Dalam Kemasan Sumur Terlindung Sumur Tak Terlindung,1,agregat,4,4    
+10537,358,Distribusi Rumah Tangga Menurut Sumber Penerangan,29,Perumahan,0,#NUM!,-,7,Persen,1,bar,1400,317-319,Listrik PLN Listrik Non-PLN Bukan Listrik,1,agregat,4,4    
+10538,359,Distribusi Rumah Tangga Menurut Penggunaan Fasilitas Tempat Buang Air Besar,29,Perumahan,0,#NUM!,-,7,Persen,1,bar,1400,320-324,Sendiri Bersama MCK Umum Tidak Menggunakan Tidak Ada,1,agregat,4,4    
+10539,360,Distribusi Rumah Tangga Menurut Bahan Bakar Utama untuk Memasak,29,Perumahan,0,#NUM!,-,7,Persen,1,bar,1400,325-327 dan 330,"Listrik Gas/Elpiji	Minyak Tanah/Arang/Briket/Kayu Lainnya",1,agregat,4,4    
+10540,361,Distribusi Rumah Tangga Menurut Status Penguasaan Bangunan Tempat Tinggal,29,Perumahan,0,#NUM!,-,7,Persen,1,bar,1400,331-333,Milik Sendiri Kontrak/Sewa Lainnya,1,agregat,4,4    
+10541,362,Distribusi Rumah Tangga Menurut Jenis Lantai Terluas,29,Perumahan,0,#NUM!,-,7,Persen,1,bar,1400,281-282,Bukan Tanah Tanah,1,agregat,4,4    
+10542,363,Persentase Rumah Tangga yang Memiliki Akses Terhadap Sanitasi Layak ,29,Perumahan,0,#NUM!,-,7,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,6,4    
+10543,364,Persentase Rumah Tangga yang Memiliki Akses Terhadap Sumber Air Minum Layak ,29,Perumahan,0,#NUM!,-,7,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,6,4    
+10620,365,Laju Pertumbuhan (Q to Q) PDRB Pengeluaran Triwulan Provinsi,155,Produk Domestik Regional Bruto (Pengeluaran),0,#NUM!,"2021: Angka Sementara , 2022: Angka Sangat Sementara",9,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,15,4    
+10629,366,Laju Pertumbuhan (Y to Y) PDRB Lapangan Usaha Triwulan Provinsi,156,Produk Domestik Regional Bruto (Lapangan Usaha),0,#NUM!,"2022: Angka Sementara , 2023: Angka Sangat Sementara",8,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,14,4    
+10621,367,Laju Pertumbuhan (Y to Y) PDRB Pengeluaran Triwulan Provinsi,155,Produk Domestik Regional Bruto (Pengeluaran),0,#NUM!,"2021: Angka Sementara , 2022: Angka Sangat Sementara",9,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,14,4    
+10630,368,Laju Pertumbuhan (C to C) PDRB Lapangan Usaha Triwulan Provinsi,156,Produk Domestik Regional Bruto (Lapangan Usaha),0,#NUM!,"2022: Angka Sementara , 2023: Angka Sangat Sementara",8,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,14,4    
+10622,369,Laju Pertumbuhan (C to C) PDRB Pengeluaran Triwulan Provinsi,155,Produk Domestik Regional Bruto (Pengeluaran),0,#NUM!,"2021: Angka Sementara , 2022: Angka Sangat Sementara",9,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,14,4    
+10631,370,Indeks Harga Implisit PDRB Lapangan Usaha Triwulan Provinsi,156,Produk Domestik Regional Bruto (Lapangan Usaha),0,#NUM!,"2022: Angka Sementara , 2023: Angka Sangat Sementara",8,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,15,4    
+10623,371,Indeks Harga Implisit PDRB Pengeluaran Triwulan Provinsi,155,Produk Domestik Regional Bruto (Pengeluaran),0,#NUM!,"2021: Angka Sementara , 2022: Angka Sangat Sementara",9,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,15,4    
+10632,372,Laju Indeks Harga Implisit PDRB Lapangan Usaha Triwulan Provinsi,156,Produk Domestik Regional Bruto (Lapangan Usaha),0,#NUM!,"2022: Angka Sementara , 2023: Angka Sangat Sementara",8,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,15,4    
+10624,373,Laju Indeks Harga Implisit PDRB Pengeluaran Triwulan Provinsi,155,Produk Domestik Regional Bruto (Pengeluaran),0,#NUM!,"2021: Angka Sementara , 2022: Angka Sangat Sementara",9,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,14,4    
+10381,374,Persentase Penduduk Menurut Golongan Pengeluaran Per Kapita Sebulan ,5,Konsumsi dan Pengeluaran,0,#NUM!,-,49,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,3    
+10382,377,Persentase Pengeluaran per Kapita Sebulan Menurut Kelompok Komoditas (Makanan),5,Konsumsi dan Pengeluaran,0,#NUM!,-,14,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,3    
+10383,378,Persentase Pengeluaran per Kapita Sebulan Menurut Kelompok Komoditas (Bukan Makanan),5,Konsumsi dan Pengeluaran,0,#NUM!,-,15,Persen,1,bar,1400,0,Tidak Ada,0,Tidak Ada,5,3    
+10384,379,Rata-rata Pengeluaran per Kapita Sebulan Makanan dan Bukan Makanan,5,Konsumsi dan Pengeluaran,0,#NUM!,-,7,Rupiah,1,bar,1400,334-335,Makanan Bukan Makanan,2,perbandingan ,5,1    
+10385,380,Persentase Pengeluaran per Kapita Sebulan Makanan dan Bukan Makanan,5,Konsumsi dan Pengeluaran,0,#NUM!,-,7,Persen,1,bar,1400,334-335,Makanan Bukan Makanan,1,agregat,5,4    
+10569,381,Umur Harapan Hidup Menurut Jenis Kelamin,40,Gender,0,#NUM!,NaN,7,Tahun,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,3,bebas ,5,2    
+10570,382,Harapan Lama Sekolah (HLS) Menurut Jenis Kelamin,40,Gender,0,#NUM!,NaN,7,Tahun,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,3,bebas ,5,2    
+10571,383,Rata-rata Lama Sekolah (RLS) Menurut Jenis Kelamin,40,Gender,0,#NUM!,NaN,7,Tahun,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,3,bebas ,5,2    
+10572,384,Pengeluaran Per Kapita Yang Disesuaikan Menurut Jenis Kelamin,40,Gender,0,#NUM!,NaN,7,Ribu Rupiah/Orang/Tahun,1,bar,1400,73-75,Laki-Laki Perempuan Jumlah,1,agregat,4,2    
+10573,385,Indeks Pembangunan Manusia (IPM) Menurut Jenis Kelamin,40,Gender,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,45-47,Laki-Laki Perempuan Jumlah,3,bebas ,5,4    
+10464,386,NTUP,22,Nilai Tukar Petani,0,#NUM!,NaN,1,Tidak Ada Satuan,3,line,1400,0,Tidak Ada,0,Tidak Ada,8,4    
+10472,387,Gini Rasio Kab/Kota,23,Kemiskinan,0,#NUM!,NaN,7,Tidak Ada Satuan,3,line,1400,0,Tidak Ada,0,Tidak Ada,4,4    
+10603,388,Jumlah Kecamatan di Provinsi Riau,101,Pemerintahan,0,#NUM!,NaN,7,Tidak Ada Satuan,2,pie,1400,0,Tidak Ada,0,Tidak Ada,7,1    
+10604,389,Jumlah Desa /Kelurahan di Provinsi Riau,101,Pemerintahan,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,7,1    
+10613,390,Jarak ke Ibukota Provinsi Riau ,153,Geografi,0,#NUM!,NaN,50,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,1    
+10614,391,Jumlah Pulau di Provinsi Riau,153,Geografi,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,1    
+10615,393,Persentase Luas Kabupaten/Kota terhadap Provinsi Riau,153,Geografi,0,#NUM!,NaN,7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,4,3    
+10432,394,"Jumlah Pelanggan, Volume dan Nilai Air Bersih yang Disalurkan",7,Energi,0,#NUM!,Sumber : Statistik Air Bersih,7,Tidak Ada Satuan,1,bar,1400,337-339,Jumlah Pelanggan Air yang disalurkan (m3) Nilai (Rp),2,perbandingan ,1,1    
+10581,395,Laju Implisit Kabupaten Kota,52,Produk Domestik Regional Bruto (Kabupaten/Kota),0,#NUM!,"2021: Angka Sementara , 2022: Angka Sangat Sementara",7,Tidak Ada Satuan,1,bar,1400,0,Tidak Ada,0,Tidak Ada,12,4    
+10574,397,[IDG] Persentase Keterlibatan di Parlemen,40,Gender,0,#NUM!,NaN,7,Persen,1,bar,1400,45-47 370-371,Laki-Laki Perempuan ,1,agregat,4,4    
+10575,398,"[IDG] Persentase Tenaga Manager, Profesional, Administrasi, Teknisi",40,Gender,0,#NUM!,NaN,7,Persen,1,bar,1400,370-371,Laki-Laki Perempuan ,1,agregat,4,4    
+10576,399,[IDG] Sumbangan dalam Pendapatan Kerja,40,Gender,0,#NUM!,NaN,7,Persen,1,bar,1400,370-371,Laki-Laki Perempuan ,1,agregat,4,4    
