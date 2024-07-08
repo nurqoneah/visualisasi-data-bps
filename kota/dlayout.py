@@ -108,7 +108,7 @@ def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
             config={'displaylogo': False, 'modeBarButtonsToRemove': ['lasso2d', 'pan']},
             id='avg_bar_chart_fig',
             className='bar_chart_graph',
-            style=dict(width='', height='500px')  # Fixed height for single chart
+            style=dict(width='', height='500px')  
         )
 
         bar_chart_header = common.header_with_icon_div(
@@ -193,7 +193,7 @@ def get_time_series_layout(unit,selected_value,df):
     turunan_variabel = df['turunan variable'].unique().tolist()
     
 
-    # Dropdown for selecting turunan variabel
+   
     if len(turunan_variabel) > 1:
         if 'Jumlah' in turunan_variabel:
             turunan_variabel.remove('Jumlah')
@@ -218,7 +218,7 @@ def get_time_series_layout(unit,selected_value,df):
 
         
     variables = df['variable'].unique().tolist()
-    selected_variables = [variables[0]]  # default selected variables
+    selected_variables = [variables[0]] 
 
     option_variables = dmc.MultiSelect(
         data=[{'label': var, 'value': var} for var in variables],
@@ -237,7 +237,7 @@ def get_time_series_layout(unit,selected_value,df):
         style=dict(height='49.8px', paddingTop='10px')
     )
 
-    time_series_fig = plotly_visual.get_time_series_figure(data_processing.get_time_series_data(df, dropdown_value, selected_variables))  # assuming you have a function to generate time series figure
+    time_series_fig = plotly_visual.get_time_series_figure(data_processing.get_time_series_data(df, dropdown_value, selected_variables))  
 
     time_series_graph = dcc.Graph(
         figure=time_series_fig,
@@ -282,7 +282,7 @@ def city_analysis_dlayout(unit, selected_value, df, year, vertical_id, turunan_i
         units="("+unit+")"
     years = df.columns[4:].tolist()
     years_count = len(years)
-    print(year)
+    
     layout_item =[]
 
     heatmap_layout = get_heatmap_layout(units,selected_value,df,year)
@@ -295,15 +295,6 @@ def city_analysis_dlayout(unit, selected_value, df, year, vertical_id, turunan_i
     
         
 
-    # stats_cols = get_summary(unit, df, year, turunan_id)
-
-    # stats_div = dmc.Grid(
-    #     stats_cols,
-    #     align="center",
-    #     justify="space-around",
-    #     gutter="md",
-    #     style=dict(marginTop='.5rem', paddingLeft='1.5rem', paddingRight='1.5rem')
-    # )
     
     layout = html.Div(
         [

@@ -7,20 +7,28 @@ def get_filter_df(df):
 
 
 def get_min(unit, df, year, title):
-    df = df[~df['variable'].str.contains('Riau|Provinsi Riau|Jumlah|Jumlah bukan makanan|Jumlah Makanan|PDRB', case=False)]
+    df = df[~df['variable'].str.contains('Riau|Provinsi Riau|Jumlah|Jumlah bukan makanan|Jumlah Makanan|PDRB|Neraca Perdagangan Luar Negeri', case=False)]
     if 'Jumlah' in df['turunan variable'].unique():
-        min_row = df[df['turunan variable'] == 'Jumlah'].groupby('variable')[year].sum().reset_index().sort_values(year, ascending=True).iloc[0]
+        grouped_df = df[df['turunan variable'] == 'Jumlah'].groupby('variable')[year].sum().reset_index().sort_values(year, ascending=True)
     else:
-        min_row = df.groupby('variable')[year].sum().reset_index().sort_values(year, ascending=True).iloc[0]
-    return 'Min '+title, "{:,.2f} ".format(min_row[year])+unit, min_row['variable']
+        grouped_df = df.groupby('variable')[year].sum().reset_index().sort_values(year, ascending=True)
+    if grouped_df.empty:
+        return 'Min ' + title, None, None
+    
+    min_row = grouped_df.iloc[0]
+    return 'Min ' + title, "{:,.2f} ".format(min_row[year]) + unit, min_row['variable']
 
 def get_max(unit, df, year, title):
     df = df[~df['variable'].str.contains('Riau|Provinsi Riau|Jumlah|Jumlah bukan makanan|Jumlah Makanan|PDRB', case=False)]
     if 'Jumlah' in df['turunan variable'].unique():
-        max_row = df[df['turunan variable'] == 'Jumlah'].groupby('variable')[year].sum().reset_index().sort_values(year, ascending=False).iloc[0]
+        grouped_df = df[df['turunan variable'] == 'Jumlah'].groupby('variable')[year].sum().reset_index().sort_values(year, ascending=False)
     else:
-        max_row = df.groupby('variable')[year].sum().reset_index().sort_values(year, ascending=False).iloc[0]
-    return 'Max '+title, "{:,.2f} ".format(max_row[year])+unit, max_row['variable']
+        grouped_df = df.groupby('variable')[year].sum().reset_index().sort_values(year, ascending=False)
+    if grouped_df.empty:
+        return 'Max ' + title, None, None
+    
+    max_row = grouped_df.iloc[0]
+    return 'Max ' + title, "{:,.2f} ".format(max_row[year]) + unit, max_row['variable']
 
 
 
@@ -54,38 +62,8 @@ def preprocess_dataframe(df):
         sum_df['id_tur_var'] = 'Jumlah'
         sum_df['turunan variable'] = 'Jumlah'
 
-        # Concatenate the original dataframe with the sum dataframe
+        
         df = pd.concat([df, sum_df], ignore_index=True)
         
         
     return df
-
-def get_time_series_data(df):
-    filtered_df = df
-
-    years = df.columns[4:].tolist()
-    traces = []
-
-    # Iterate through selected variables
-    for variable in selected_variables:
-        variable_data = filtered_df[filtered_df['variable'] == variable]
-        if variable_data.empty:
-            print(f"No data found for variable '{variable}' within the filtered dataframe.")
-            continue
-        
-        try:
-            data = variable_data.iloc[0, 4:].tolist()
-            trace = {
-                'x': years,
-                'y': data,
-                'mode': 'lines+markers',
-                'name': variable
-            }
-
-            # Append the trace to the list of traces
-            traces.append(trace)
-        except IndexError as e:
-            print(f"IndexError for variable '{variable}': {e}")
-            continue
-    return traces
-

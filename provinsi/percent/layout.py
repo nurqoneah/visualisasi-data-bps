@@ -85,7 +85,7 @@ def get_pie_chart_col(unit,selected_value,df, year, turunan_id):
                 config={'displaylogo': False, 'modeBarButtonsToRemove': ['lasso2d', 'pan']},
                 id='percent_pie_chart_fig',
                 className='pie_chart_graph',
-                style=dict(width='', height='450px')  # Fixed height for single chart
+                style=dict(width='', height='450px') 
             )
         else:
             sunburst_fig = plotly_visual.get_sunburst_chart_figure(data_processing.get_filter_df(df), year)
@@ -94,7 +94,7 @@ def get_pie_chart_col(unit,selected_value,df, year, turunan_id):
                 config={'displaylogo': False, 'modeBarButtonsToRemove': ['lasso2d', 'pan']},
                 id='percent_pie_chart_fig',
                 className='sunburst_chart_graph',
-                style=dict(width='', height='450px')  # Fixed height for single chart
+                style=dict(width='', height='450px') 
             )
 
         pie_chart_graph = dcc.Loading(
@@ -191,7 +191,7 @@ def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
         config={'displaylogo': False, 'modeBarButtonsToRemove': ['lasso2d', 'pan']},
         id='percent_bar_chart_fig',
         className='bar_chart_graph',
-        style=dict(width='', height='500px')  # Fixed height for single chart
+        style=dict(width='', height='500px') 
     )
 
     bar_chart_header = common.header_with_icon_div(
@@ -239,7 +239,7 @@ def get_heatmap_layout(unit,selected_value,df, year, vertical_id):
         style=dict(width='', height='500px')
     )
 
-    # heatmap_graph = dbc.Spinner([heatmap_graph], size="lg", color="primary", type="border", fullscreen=False)
+   
 
     heatmap_header = common.header_with_icon_div(icon_name='carbon:heat-map-03',
                                                  header_text='Heatmap '+selected_value+" "+year+" "+unit,
@@ -279,7 +279,7 @@ def get_time_series_layout(unit,selected_value,df):
         config={'displaylogo': False, 'modeBarButtonsToRemove': ['lasso2d', 'pan']},
         id='percent_area_chart_fig',
         className='area_chart_graph',
-        style=dict(width='', height='500px')  # Fixed height for single chart
+        style=dict(width='', height='500px') 
     )
 
     area_chart_header = common.header_with_icon_div(icon_name='carbon:heat-map-03',
@@ -318,7 +318,7 @@ def percent_analysis_layout(unit, selected_value, df, year, vertical_id, turunan
         units="("+unit+")"
     years = df.columns[4:].tolist()
     years_count = len(years)
-    print(year)
+    
     layout_item =[]
 
     if turunan_id == 0:

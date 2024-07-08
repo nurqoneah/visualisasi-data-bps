@@ -1,20 +1,21 @@
 import numpy as np
 import pandas as pd
+import dash_mantine_components as dmc
 
 
 def get_total(df,year):
     if year not in df.columns:
             return None
-    print(df)
+ 
     filtered_df = df[df['variable'].str.contains('Riau|Provinsi Riau|Jumlah|Jumlah bukan makanan|Jumlah Makanan|PDRB|Neraca Perdagangan Luar Negeri', case=False) ]
-    print(filtered_df)
+    
     if 'Jumlah|Total' in filtered_df['turunan variable'].unique():
         filtered_df=filtered_df[filtered_df['turunan variable'].str.contains('Jumlah|Total', case=False) ]
     if not filtered_df.empty:
         total = filtered_df[year].sum()
     else:
         total = df[year].sum()
-    print(filtered_df)
+   
     return total
 
 def get_total_change(unit,df, year, title):
@@ -31,7 +32,6 @@ def get_total_change(unit,df, year, title):
                 total_change_str = total_changen
             return title, "{:,.2f} ".format(total_current_year)+unit, total_change_str
         else:
-            # Handle case when previous year data is missing
             return title, "{:,.2f} ".format(total_current_year)+unit, None
     else:
         return title, None, None
@@ -39,18 +39,27 @@ def get_total_change(unit,df, year, title):
 def get_min(unit, df, year, title):
     df = df[~df['variable'].str.contains('Riau|Provinsi Riau|Jumlah|Jumlah bukan makanan|Jumlah Makanan|PDRB|Neraca Perdagangan Luar Negeri', case=False)]
     if 'Jumlah' in df['turunan variable'].unique():
-        min_row = df[df['turunan variable'] == 'Jumlah'].groupby('variable')[year].sum().reset_index().sort_values(year, ascending=True).iloc[0]
+        grouped_df = df[df['turunan variable'] == 'Jumlah'].groupby('variable')[year].sum().reset_index().sort_values(year, ascending=True)
     else:
-        min_row = df.groupby('variable')[year].sum().reset_index().sort_values(year, ascending=True).iloc[0]
-    return 'Min '+title, "{:,.2f} ".format(min_row[year])+unit, min_row['variable']
+        grouped_df = df.groupby('variable')[year].sum().reset_index().sort_values(year, ascending=True)
+    if grouped_df.empty:
+        return 'Min ' + title, None, None
+    
+    min_row = grouped_df.iloc[0]
+    return 'Min ' + title, "{:,.2f} ".format(min_row[year]) + unit, min_row['variable']
 
 def get_max(unit, df, year, title):
     df = df[~df['variable'].str.contains('Riau|Provinsi Riau|Jumlah|Jumlah bukan makanan|Jumlah Makanan|PDRB', case=False)]
     if 'Jumlah' in df['turunan variable'].unique():
-        max_row = df[df['turunan variable'] == 'Jumlah'].groupby('variable')[year].sum().reset_index().sort_values(year, ascending=False).iloc[0]
+        grouped_df = df[df['turunan variable'] == 'Jumlah'].groupby('variable')[year].sum().reset_index().sort_values(year, ascending=False)
     else:
-        max_row = df.groupby('variable')[year].sum().reset_index().sort_values(year, ascending=False).iloc[0]
-    return 'Max '+title, "{:,.2f} ".format(max_row[year])+unit, max_row['variable']
+        grouped_df = df.groupby('variable')[year].sum().reset_index().sort_values(year, ascending=False)
+    if grouped_df.empty:
+        return 'Max ' + title, None, None
+    
+    max_row = grouped_df.iloc[0]
+    return 'Max ' + title, "{:,.2f} ".format(max_row[year]) + unit, max_row['variable']
+
 
 def get_growth(df, year, title):
     previous_year = str(int(year) - 1)
@@ -73,7 +82,7 @@ def get_growth(df, year, title):
 
 def get_heatmap_data(df, year, selected_turunan_variabel):
     df_filtered = df[~df['variable'].str.contains('Riau|Provinsi Riau', case=False)]
-    # df_filtered = df
+ 
     if selected_turunan_variabel is not None:
         df_filtered = df_filtered[df_filtered['turunan variable'] == selected_turunan_variabel]
     df_filtered = df_filtered[['id_var', 'variable', 'id_tur_var', 'turunan variable', year]]
@@ -81,15 +90,15 @@ def get_heatmap_data(df, year, selected_turunan_variabel):
     return df_filtered
 
 def get_bar_chart_data(df, year, chart_type):
-    # df_filtered = df[~df['variable'].str.contains('Riau|Provinsi Riau|Jumlah|Jumlah bukan makanan|Jumlah Makanan|PDRB', case=False)]
+   
     df_filtered = df
     if chart_type == 'variable':
         if 'Jumlah' in df_filtered['turunan variable'].unique():
-            df_filtered = df_filtered[df_filtered['turunan variable'] != 'Jumlah']  # Remove categories with 'Jumlah'
+            df_filtered = df_filtered[df_filtered['turunan variable'] != 'Jumlah'] 
         bar_data = df_filtered[['variable', year]].groupby('variable').sum().reset_index()
-    else:  # chart_type == 'variable_turunan'
+    else: 
         if 'Jumlah' in df_filtered['turunan variable'].unique():
-            df_filtered = df_filtered[df_filtered['turunan variable'] != 'Jumlah']  # Remove categories with 'Jumlah'
+            df_filtered = df_filtered[df_filtered['turunan variable'] != 'Jumlah']  
         bar_data = df_filtered[['turunan variable', year]].groupby('turunan variable').sum().reset_index()
     
     unique_turunan_var = df_filtered['turunan variable'].unique()
@@ -102,7 +111,7 @@ def get_time_series_data(df, turunan_variable, selected_variables):
     years = df.columns[4:].tolist()
     traces = []
 
-    # Iterate through selected variables
+     
     for variable in selected_variables:
         variable_data = filtered_df[filtered_df['variable'] == variable]
         if variable_data.empty:
@@ -118,10 +127,9 @@ def get_time_series_data(df, turunan_variable, selected_variables):
                 'name': variable
             }
 
-            # Append the trace to the list of traces
+         
             traces.append(trace)
         except IndexError as e:
-            print(f"IndexError for variable '{variable}': {e}")
-            continue
+            return dmc.Alert(f"IndexError for variable '{variable}': {e}", color="red", title="Index Error")
     return traces
 

@@ -17,7 +17,7 @@ def get_summary_other(unit, df, year, turunan_id):
         'min': constants.DASHBOARD_MAIN_COLOR3,
     }
 
-    if turunan_id == 0|3:
+    if turunan_id not in (1,3):
         max_title, max_df, max_desc = data_processing.get_max(unit, df, year, "")
         min_title, min_df, min_desc = data_processing.get_min(unit, df, year, "")
 
@@ -115,7 +115,7 @@ def get_heatmap_layout(unit,selected_value, df, year, vertical_id):
         style=dict(width='', height='')
     )
 
-    # heatmap_graph = dbc.Spinner([heatmap_graph], size="lg", color="primary", type="border", fullscreen=False)
+    
 
     heatmap_header = common.header_with_icon_div(icon_name='carbon:heat-map-03',
                                                  header_text='Heatmap '+selected_value+" "+year+" "+unit,
@@ -146,11 +146,11 @@ def get_heatmap_layout(unit,selected_value, df, year, vertical_id):
     return heatmap_col
 
 def get_time_series_layout(unit,selected_value,df):
-    # df=data_processing.preprocess_dataframe(df)
+   
     turunan_variabel = df['turunan variable'].unique().tolist()
     
 
-    # Dropdown for selecting turunan variabel
+   
     if len(turunan_variabel) > 1:
         if 'Jumlah' in turunan_variabel:
             turunan_variabel.remove('Jumlah')
@@ -175,7 +175,7 @@ def get_time_series_layout(unit,selected_value,df):
 
         
     variables = df['variable'].unique().tolist()
-    selected_variables = [variables[0]]  # default selected variables
+    selected_variables = [variables[0]]  
 
     option_variables = dmc.MultiSelect(
         data=[{'label': var, 'value': var} for var in variables],
@@ -194,7 +194,7 @@ def get_time_series_layout(unit,selected_value,df):
         style=dict(height='49.8px', paddingTop='10px')
     )
 
-    time_series_fig = plotly_visual.get_time_series_figure(data_processing.get_time_series_data(df, dropdown_value, selected_variables))  # assuming you have a function to generate time series figure
+    time_series_fig = plotly_visual.get_time_series_figure(data_processing.get_time_series_data(df, dropdown_value, selected_variables))  
 
     time_series_graph = dcc.Graph(
         figure=time_series_fig,
@@ -240,7 +240,7 @@ def other_analysis_layout(unit, selected_value,df, year, vertical_id, turunan_id
         units="("+unit+")"
     years = df.columns[4:].tolist()
     years_count = len(years)
-    print(year)
+    
     layout_item =[]
     if sub_id!=30:
         df=df[df["turunan variable"]=="Tidak Ada"]

@@ -1,6 +1,4 @@
-
-
-
+import dash_mantine_components as dmc
 import plotly.graph_objects as go
 import json
 import pandas as pd
@@ -43,8 +41,7 @@ def get_heatmap_geos_figure(df, year):
         return fig_choropleth
 
     except Exception as e:
-        print(f"An error occurred: {str(e)}")
-        return None
+       return dmc.Alert(f"An error occurred: {str(e)}", color="red", title="Error")
 
 def get_heatmap_figure(df, year):
     try:
@@ -69,8 +66,8 @@ def get_heatmap_figure(df, year):
         return fig_heatmap
 
     except Exception as e:
-        print(f"An error occurred: {str(e)}")
-        return None
+        return dmc.Alert(f"An error occurred: {str(e)}", color="red", title="Error")
+      
 
 
 
@@ -82,7 +79,7 @@ def get_range_plot_figure(df, year):
 
     fig = go.Figure()
 
-    # Adding the min-max range
+    
     fig.add_trace(go.Scatter(
         x=variables,
         y=min_values,
@@ -95,13 +92,13 @@ def get_range_plot_figure(df, year):
     fig.add_trace(go.Scatter(
         x=variables,
         y=max_values,
-        fill='tonexty',  # Fill area between trace0 and trace1
+        fill='tonexty',  
         mode='lines',
         line_color='lightgrey',
         showlegend=False
     ))
 
-    # Adding the average line
+    
     fig.add_trace(go.Scatter(
         x=variables,
         y=avg_values,

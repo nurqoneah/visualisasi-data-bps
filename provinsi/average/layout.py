@@ -45,7 +45,6 @@ def get_summary_average(unit,df, year, vertical_id, turunan_id):
             turunan_variables = df['turunan variable'].unique()
 
             for idx, turunan_variable in enumerate(turunan_variables):
-                print("ini turunan_vaariablenya =="+turunan_variable)
                 average_title, average_df, average_desc = data_processing.get_average_change(unit,df[df['turunan variable'] == turunan_variable], year, turunan_variable)
 
                 titles = [average_title]
@@ -72,7 +71,7 @@ def get_summary_average(unit,df, year, vertical_id, turunan_id):
 
 def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
     if turunan_id != 0:
-        # Menggunakan rotated bar chart
+      
         rotated_bar_fig = plotly_visual.get_rotated_bar_chart(data_processing.get_filter_df(df), year)
 
         bar_chart_graph = dcc.Graph(
@@ -108,7 +107,7 @@ def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
             style=dict()
         )
     else:
-        # Menggunakan bar chart
+       
         bar_chart_data, _, _ = data_processing.get_bar_chart_data(df, year, 'variable')
         bar_chart_fig = plotly_visual.get_bar_chart_figure(bar_chart_data, year, 'variable')
         bar_chart_graph = dcc.Graph(
@@ -116,7 +115,7 @@ def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
             config={'displaylogo': False, 'modeBarButtonsToRemove': ['lasso2d', 'pan']},
             id='avg_bar_chart_fig',
             className='bar_chart_graph',
-            style=dict(width='', height='500px')  # Fixed height for single chart
+            style=dict(width='', height='500px') 
         )
 
         bar_chart_header = common.header_with_icon_div(
@@ -204,7 +203,6 @@ def get_heatmap_layout(unit,selected_value,df, year, vertical_id):
         style=dict(width='', height='')
     )
 
-    # heatmap_graph = dbc.Spinner([heatmap_graph], size="lg", color="primary", type="border", fullscreen=False)
 
     heatmap_header = common.header_with_icon_div(icon_name='carbon:heat-map-03',
                                                  header_text='Heatmap '+selected_value+" "+year+" "+unit,
@@ -262,7 +260,7 @@ def get_time_series_layout(unit,selected_value,df):
 
         
     variables = df['variable'].unique().tolist()
-    selected_variables = [variables[0]]  # default selected variables
+    selected_variables = [variables[0]] 
 
     option_variables = dmc.MultiSelect(
         data=[{'label': var, 'value': var} for var in variables],
@@ -281,7 +279,7 @@ def get_time_series_layout(unit,selected_value,df):
         style=dict(height='49.8px', paddingTop='10px')
     )
 
-    time_series_fig = plotly_visual.get_time_series_figure(data_processing.get_time_series_data(df, dropdown_value, selected_variables))  # assuming you have a function to generate time series figure
+    time_series_fig = plotly_visual.get_time_series_figure(data_processing.get_time_series_data(df, dropdown_value, selected_variables)) 
 
     time_series_graph = dcc.Graph(
         figure=time_series_fig,
@@ -327,7 +325,7 @@ def get_scatter_plot_col(unit,selected_value,df, year):
         config={'displaylogo': False, 'modeBarButtonsToRemove': ['lasso2d', 'pan']},
         id='avg_scatter_plot_fig',
         className='scatter_plot_graph',
-        style=dict(width='', height='500px')  # Fixed height for single chart
+        style=dict(width='', height='500px')  
     )
     scatter_plot_graph = dbc.Spinner([scatter_plot_graph], size="lg", color="primary", type="border", fullscreen=False)
     scatter_plot_card=dmc.Card(
@@ -365,7 +363,7 @@ def average_analysis_layout(unit,selected_value, df, year, vertical_id, turunan_
         units="("+unit+")"
     years = df.columns[4:].tolist()
     years_count = len(years)
-    print(df)
+    
     layout_item =[]
 
     if vertical_id != 1:

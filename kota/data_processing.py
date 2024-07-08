@@ -76,7 +76,6 @@ def get_time_series_data(df, turunan_variable, selected_variables):
     years = df.columns[4:].tolist()
     traces = []
 
-    # Iterate through selected variables
     for variable in selected_variables:
         variable_data = filtered_df[filtered_df['variable'] == variable]
         if variable_data.empty:
@@ -92,7 +91,7 @@ def get_time_series_data(df, turunan_variable, selected_variables):
                 'name': variable
             }
 
-            # Append the trace to the list of traces
+          
             traces.append(trace)
         except IndexError as e:
             print(f"IndexError for variable '{variable}': {e}")

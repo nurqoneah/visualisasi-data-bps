@@ -32,8 +32,7 @@ def add_average_callbacks(app: dash.Dash):
             var_id = df[df['title'] == selected_sub_category]['var_id'].values[0]
             df_data = client.view_dynamictable(domain='1400', var=var_id)
             df_data.iloc[:, 4:] = df_data.iloc[:, 4:].replace('', np.nan)
-            print("holaa")
-            print(df_data)
+
     
         df_filtered = data_processing.get_heatmap_data(df_data, year, selected_turunan_variabel)
         heatmap_fig = plotly_visual.get_heatmap_geos_figure(df_filtered, year)
@@ -53,7 +52,7 @@ def add_average_callbacks(app: dash.Dash):
         Input('sub_categories_menu', 'value')]
     )
     def update_time_series(turunan_variable, selected_variables, selected_value):
-        # Baca data dari sumber data Anda
+        
         df = pd.read_csv(constants.CSV_FILE_DIRECTORY, encoding='ISO-8859-1')
         if selected_value in df['title'].values:
             var_id = df[df['title'] == selected_value]['var_id'].values[0]

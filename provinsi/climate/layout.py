@@ -17,7 +17,7 @@ def get_summary_climate(unit,df, year, turunan_id):
         'min': constants.DASHBOARD_MAIN_COLOR3,
     }
 
-    if turunan_id == 0|3:
+    if turunan_id not in (0,3):
         max_title, max_df, max_desc = data_processing.get_max(unit,df, year, "")
         min_title, min_df, min_desc = data_processing.get_min(unit,df, year, "")
 
@@ -99,10 +99,10 @@ def get_bar_chart_col(unit,selected_value,df, year):
     return bar_chart_col
 
 def get_range_layout(unit,selected_value,df, year):
-    # Generate the range plot figure
+    
     range_plot_fig = plotly_visual.get_range_plot_figure(df, year)
 
-    # Create the graph
+ 
     range_plot_graph = dcc.Graph(
         figure=range_plot_fig,
         config={'displaylogo': False, 'modeBarButtonsToRemove': ['lasso2d', 'pan']},
@@ -113,7 +113,7 @@ def get_range_layout(unit,selected_value,df, year):
 
     range_plot_graph = dbc.Spinner([range_plot_graph], size="lg", color="primary", type="border", fullscreen=False)
 
-    # Create the card layout
+  
     range_plot_card = dmc.Card(
         children=[
             dmc.CardSection(
@@ -137,7 +137,7 @@ def get_range_layout(unit,selected_value,df, year):
         radius="md"
     )
 
-    # Create the column layout
+  
     range_plot_col = dmc.Col(
         [range_plot_card],
         xs=12, sm=12, md=6, lg=6, xl=6,
@@ -158,7 +158,7 @@ def get_heatmap_layout(unit,selected_value,df, year):
         style=dict(width='', height='500px')
     )
 
-    # heatmap_graph = dbc.Spinner([heatmap_graph], size="lg", color="primary", type="border", fullscreen=False)
+  
 
     heatmap_header = common.header_with_icon_div(icon_name='carbon:heat-map-03',
                                                  header_text='Heatmap '+selected_value+" "+year+" "+unit,
@@ -236,7 +236,7 @@ def get_time_series_layout(unit,selected_value,df, year):
 
     time_series_graph = dbc.Spinner([time_series_graph], size="lg", color="primary", type="border", fullscreen=False)
 
-    # Create the card layout
+    
     time_series_card = dmc.Card(
         children=[
             dmc.CardSection(
@@ -261,7 +261,7 @@ def get_time_series_layout(unit,selected_value,df, year):
         radius="md"
     )
 
-    # Create the column layout
+    
     time_series_col = dmc.Col(
         [time_series_card],
         xs=12, sm=12, md=6, lg=6, xl=6,
@@ -275,7 +275,6 @@ def climate_analysis_layout(unit,selected_value, df, year, turunan_id):
         units=""
     else:
         units="("+unit+")"
-    print(year)
     layout_item =[]
 
     heatmap_layout = get_heatmap_layout(units,selected_value,df,year)

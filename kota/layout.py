@@ -74,7 +74,7 @@ def city_analysis_layout():
     data_kota_df = constants.DATA_KOTA_DF
     city_col = get_city(data_kota_df)
 
-    # Ensure df is a DataFrame
+
     cat_col = get_categories(df, int(data_kota_df['id_var_kota'][0]))
     sub_cat_col = get_sub_categories(df, 'Semua Kategori', int(data_kota_df['id_var_kota'][0]))
 
@@ -152,48 +152,6 @@ def city_analysis_layout():
         style=dict(paddingLeft='1.3rem', paddingRight='1.3rem')
     )
 
-    
-    # title_kota = common.header_with_icon_div(
-    #     icon_name='material-symbols:search-insights',
-    #     header_text='Kota/Kabupaten',
-    #     icon_color='#272727',
-    #     icon_size='1.5rem',
-    #     header_size='1.2rem'
-    # )
-
-    # title_kota = dmc.CardSection(
-    #     title_kota,
-    #     withBorder=True,
-    #     inheritPadding=True,
-    #     py='sm',
-    #     style=dict(paddingLeft='1rem')
-    # )
-
-    # city = dmc.Card(
-    #     children=[
-    #         title_kota,
-    #         dmc.Space(h=10),
-    #         city_col
-    #     ],
-    #     withBorder=True,
-    #     shadow="sm",
-    #     radius="md"
-    # )
-    # city_col = html.Div(
-    #     children=[
-    #         dmc.Grid(
-    #             children=[dmc.Col(
-    #                 [city],
-    #                 xs=12, sm=12, md=12, lg=12, xl=12,
-    #                 style=dict()
-    #             )],
-    #             gutter=15,
-    #             align='center',
-    #             style=dict(paddingLeft='1.3rem', paddingRight='1.3rem', width='40%')
-    #         )
-    #     ],
-    #     style=dict(display='flex', justifyContent='center', width='100%')
-    # )
 
     layout = html.Div([
         

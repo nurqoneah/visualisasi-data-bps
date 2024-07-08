@@ -62,7 +62,7 @@ def province_analysis_layout():
     sub_cat_col = get_sub_categories(df, 'Semua Kategori')
     df_data = client.view_dynamictable(domain='1400', var=df['var_id'][0])
     df_data.iloc[:, 4:] = df_data.iloc[:, 4:].replace({'': np.nan})
-    # df_data.iloc[:, 4:] = df_data.iloc[:, 4:].replace(0, np.nan)
+  
     years_col = get_years(df_data)
 
     search_category_header = common.header_with_icon_div(
@@ -72,8 +72,6 @@ def province_analysis_layout():
         icon_size='1.5rem',
         header_size='1.2rem'
     )
-    print(dash.__version__) 
-   
     download_excel = html.Div([Download(id="download_excel")])
 
     download_button = dmc.Button(
@@ -132,7 +130,10 @@ def province_analysis_layout():
 
     layout = html.Div([
         layout,
-        html.Div(id="dynamic-content")
+        dmc.LoadingOverlay(
+            html.Div(id="dynamic-content"),
+            loaderProps={"variant": "bars", "size": "lg", "color": "blue"}
+        )
     ])
 
 

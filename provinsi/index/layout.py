@@ -25,7 +25,7 @@ def get_summary_index(unit, df, title, year, vertical_id, turunan_id):
         col = dmc.Col(children=card, xl=12/3, lg=4, md=4, sm=6, xs=6, span=5, style=dict())
         stats_cols.append(col)
 
-    if vertical_id != 1|20:
+    if vertical_id not in (1, 20):
         turunan_variables = df['turunan variable'].unique()
         for idx, turunan_variable in enumerate(turunan_variables):
             max_title, max_df, max_desc = data_processing.get_max(unit, df[df['turunan variable'] == turunan_variable], year, turunan_variable)
@@ -62,7 +62,7 @@ def get_summary_index(unit, df, title, year, vertical_id, turunan_id):
 def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
     chart_type_options_bar = None
     value_type_options_bar = None
-    options_row = None  # Initialize options_row to avoid UnboundLocalError
+    options_row = None 
 
     if turunan_id != 2:
         if turunan_id == 0:
@@ -73,10 +73,10 @@ def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
                 config={'displaylogo': False, 'modeBarButtonsToRemove': ['lasso2d', 'pan']},
                 id='index_bar_chart_fig',
                 className='bar_chart_graph',
-                style=dict(width='', height='500px')  # Fixed height for single chart
+                style=dict(width='', height='500px') 
             )
         else:
-            # Options for chart type
+            
             chart_types = [['Bar Chart', 'bar_chart'], ['Stacked Bar Chart', 'stacked_bar_chart']]
             chart_type_options_bar = dmc.RadioGroup(
                 children=[dmc.Radio(l, value=v) for l, v in chart_types],
@@ -88,14 +88,14 @@ def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
                 offset=4
             )
             
-            # Get the selected chart type
+            
             chart_type = chart_type_options_bar.value
             
             bar_chart_data, unique_turunan_var, value_type = data_processing.get_bar_chart_data(df, year, 'variable')
 
             value_types = [['Variable', 'variable']]
             if not (len(unique_turunan_var) == 1 and unique_turunan_var[0] == 'Tidak Ada'):
-                value_types.append(['Turunan Variabel', 'turunan variable'])  # Ensure name matches the DataFrame
+                value_types.append(['Turunan Variabel', 'turunan variable']) 
 
             value_type_options_bar = dmc.RadioGroup(
                 children=[dmc.Radio(l, value=v) for l, v in value_types],
@@ -122,10 +122,10 @@ def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
                     config={'displaylogo': False, 'modeBarButtonsToRemove': ['lasso2d', 'pan']},
                     id='index_bar_chart_fig',
                     className='bar_chart_graph',
-                    style=dict(width='', height='450px')  # Fixed height for single chart
+                    style=dict(width='', height='450px') 
                 )
 
-            else:  # Stacked Bar Chart
+            else:  
                 if value_type == 'variable':
                     stacked_bar_fig = plotly_visual.get_stacked_bar_chart_figure(data_processing.get_filter_df(df), year, path=['variable', 'turunan variable'])
                 else:
@@ -136,10 +136,10 @@ def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
                     config={'displaylogo': False, 'modeBarButtonsToRemove': ['lasso2d', 'pan']},
                     id='index_bar_chart_fig',
                     className='stacked_bar_chart_graph',
-                    style=dict(width='', height='450px')  # Fixed height for single chart
+                    style=dict(width='', height='450px')
                 )
 
-        # bar_chart_graph = dbc.Spinner([bar_chart_graph], size="lg", color="primary", type="border", fullscreen=False)
+        
 
 
         bar_chart_header = common.header_with_icon_div(
@@ -156,7 +156,7 @@ def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
             children=[
                 dmc.CardSection(bar_chart_header, withBorder=True, inheritPadding=True, py='sm', style={'paddingLeft': '1rem'}),
                 dmc.Space(h=7),
-                options_row if options_row else dmc.Space(),  # Ensure options_row is not None
+                options_row if options_row else dmc.Space(), 
                 bar_chart_graph
             ],
             withBorder=True,
@@ -182,7 +182,7 @@ def get_bar_chart_col(unit,selected_value,df, year, turunan_id):
             style=dict(width='', height='500px')
         )
 
-        # bar_chart_graph = dbc.Spinner([bar_chart_graph], size="lg", color="primary", type="border", fullscreen=False)
+      
 
         bar_chart_header = common.header_with_icon_div(
             icon_name='ion:bar-chart-sharp',
@@ -299,11 +299,11 @@ def get_heatmap_layout(unit,selected_value,df, year, vertical_id, turunan_id):
     return heatmap_col
 
 def get_time_series_layout(unit,selected_value,df):
-    # df=data_processing.preprocess_dataframe(df)
+    
     turunan_variabel = df['turunan variable'].unique().tolist()
     
 
-    # Dropdown for selecting turunan variabel
+   
     if len(turunan_variabel) > 1:
         if 'Jumlah' in turunan_variabel:
             turunan_variabel.remove('Jumlah')
@@ -328,7 +328,7 @@ def get_time_series_layout(unit,selected_value,df):
 
         
     variables = df['variable'].unique().tolist()
-    selected_variables = [variables[0]]  # default selected variables
+    selected_variables = [variables[0]]  
 
     option_variables = dmc.MultiSelect(
         data=[{'label': var, 'value': var} for var in variables],
@@ -347,7 +347,7 @@ def get_time_series_layout(unit,selected_value,df):
         style=dict(height='49.8px', paddingTop='10px')
     )
 
-    time_series_fig = plotly_visual.get_time_series_figure(data_processing.get_time_series_data(df, dropdown_value, selected_variables))  # asindexing you have a function to generate time series figure
+    time_series_fig = plotly_visual.get_time_series_figure(data_processing.get_time_series_data(df, dropdown_value, selected_variables)) 
 
     time_series_graph = dcc.Graph(
         figure=time_series_fig,
@@ -392,7 +392,7 @@ def index_analysis_layout(unit, selected_value, df, year, vertical_id, turunan_i
         units="("+unit+")"
     years = df.columns[4:].tolist()
     years_count = len(years)
-    print(year)
+    
     layout_item =[]
 
     if vertical_id != 1:

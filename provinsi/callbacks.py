@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from dash import html
+import dash_mantine_components as dmc
 from dash.dcc import send_data_frame
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
@@ -45,28 +46,31 @@ def add_province_callbacks(app):
             sub_id = df[df['title'] == selected_value]['sub_id'].values[0]
             unit = df[df['title'] == selected_value]['unit'].values[0]
 
-            df_data = client.view_dynamictable(domain='1400', var=var_id)
-            df_data.iloc[:, 4:] = df_data.iloc[:, 4:].replace({'': np.nan})
+            try:
+                df_data = client.view_dynamictable(domain='1400', var=var_id)
+                df_data.iloc[:, 4:] = df_data.iloc[:, 4:].replace({'': np.nan})
 
-            if year not in df_data.columns:
-                return html.Div(f"Year {year} not found in the data")
+                if year not in df_data.columns:
+                    return dmc.Alert(f"Year {year} not found in the data", color="red", title="Data Error")
 
-            if jenis_data == 1:
-                return sum_analysis_layout(unit, selected_value, df_data, year, vertical_id, turunan_id)
-            elif jenis_data == 2:
-                return average_analysis_layout(unit, selected_value, df_data, year, vertical_id, turunan_id)
-            elif jenis_data == 3:
-                return percent_analysis_layout(unit, selected_value, df_data, year, vertical_id, turunan_id)
-            elif jenis_data == 4:
-                return index_analysis_layout(unit, selected_value, df_data, year, vertical_id, turunan_id)
-            elif jenis_data == 5:
-                return climate_analysis_layout(unit, selected_value, df_data, year, turunan_id)
-            elif jenis_data == 6:
-                return other_analysis_layout(unit, selected_value,df_data, year, vertical_id, turunan_id, sub_id)
-            else:
-                return html.Div("No layout available for the selected category")
+                if jenis_data == 1:
+                    return sum_analysis_layout(unit, selected_value, df_data, year, vertical_id, turunan_id)
+                elif jenis_data == 2:
+                    return average_analysis_layout(unit, selected_value, df_data, year, vertical_id, turunan_id)
+                elif jenis_data == 3:
+                    return percent_analysis_layout(unit, selected_value, df_data, year, vertical_id, turunan_id)
+                elif jenis_data == 4:
+                    return index_analysis_layout(unit, selected_value, df_data, year, vertical_id, turunan_id)
+                elif jenis_data == 5:
+                    return climate_analysis_layout(unit, selected_value, df_data, year, turunan_id)
+                elif jenis_data == 6:
+                    return other_analysis_layout(unit, selected_value, df_data, year, vertical_id, turunan_id, sub_id)
+                else:
+                    return dmc.Alert("No layout available for the selected category", color="orange", title="Layout Error")
+            except Exception as e:
+                return dmc.Alert(f"Connection Error: {str(e)}", color="red", title="Connection Error")
         else:
-            return html.Div("Selected value not found in the dataset")
+            return dmc.Alert("Selected value not found in the dataset", color="red", title="Data Error")
 
     @app.callback(
         Output('year_dropdown', 'value'),
@@ -101,16 +105,16 @@ def add_province_callbacks(app):
 
         if selected_sub_category in df['title'].values:
             var_id = df[df['title'] == selected_sub_category]['var_id'].values[0]
-            df_data = client.view_dynamictable(domain='1400', var=var_id)
-            df_data.iloc[:, 4:] = df_data.iloc[:, 4:].replace({'': np.nan, 0: np.nan})
-
-            
-            
-            excel_data = pd.DataFrame(df_data)
-            return send_data_frame(excel_data.to_excel, "Data.xlsx")
-
+            try:
+                df_data = client.view_dynamictable(domain='1400', var=var_id)
+                df_data.iloc[:, 4:] = df_data.iloc[:, 4:].replace({'': np.nan, 0: np.nan})
+                
+                excel_data = pd.DataFrame(df_data)
+                return send_data_frame(excel_data.to_excel, "Data.xlsx")
+            except Exception as e:
+                return dmc.Alert(f"Connection Error: {str(e)}", color="red", title="Connection Error")
         else:
-            raise PreventUpdate  
+            raise PreventUpdate
         
     callback_ids=["total","max","min","growth","top_growth","average"]
     for callback_id in callback_ids:

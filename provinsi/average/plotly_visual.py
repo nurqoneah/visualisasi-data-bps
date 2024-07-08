@@ -1,11 +1,11 @@
 import plotly.graph_objects as go
 import json
+import dash_mantine_components as dmc
 import pandas as pd
 import plotly.express as px
 from plotly.subplots import make_subplots
 from provinsi.sum import data_processing
 
-# Warna untuk bar, pie, dan time series
 colors = [
     '#9C2424', '#0C9494', '#EC9C05', '#EAD4A4', '#C34F04', '#94D4BC',
     '#E49C1C', '#046474', '#0C7C84', '#8CDCD4', '#AC250B', '#01012C',
@@ -14,13 +14,13 @@ colors = [
 ]
 
 def get_scatter_plot_figure(df, year):
-    # Membuat peta warna berdasarkan turunan variable
+    
     color_map = dict(zip(df['turunan variable'].unique(), colors))
     
-    # Mengonversi nilai turunan variable menjadi warna sesuai peta warna
+  
     df['color'] = df['turunan variable'].map(color_map)
     
-    # Membuat scatter plot figure dengan marker berwarna sesuai turunan variable
+   
     data = []
     for turunan_var, color in color_map.items():
         df_turunan = df[df['turunan variable'] == turunan_var]
@@ -29,19 +29,19 @@ def get_scatter_plot_figure(df, year):
             y=df_turunan[year],
             mode='markers',
             marker=dict(color=color),
-            name=turunan_var  # Memberi nama pada setiap kategori untuk legenda
+            name=turunan_var  
         )
         data.append(trace)
     
-    # Menambahkan keterangan warna (legend)
+
     layout = go.Layout(
         legend=dict(
-            traceorder='reversed',  # Urutan tampilan keterangan sesuai urutan data
-            itemsizing='constant'  # Ukuran item keterangan tetap
+            traceorder='reversed', 
+            itemsizing='constant' 
         ),
         xaxis=dict(title="Variable"),
         yaxis=dict(title="Year"),
-        margin=dict(l=0, r=0, t=30, b=60)  # Menambahkan ruang untuk keterangan warna
+        margin=dict(l=0, r=0, t=30, b=60)  
     )
     
     fig = go.Figure(data=data, layout=layout)
@@ -75,8 +75,8 @@ def get_heatmap_geos_figure(df, year):
         return fig_choropleth
 
     except Exception as e:
-        print(f"An error occurred: {str(e)}")
-        return None
+        return dmc.Alert(f"An error occurred: {str(e)}", color="red", title="Error")
+        
 
 def get_heatmap_figure(df, year):
     try:
@@ -101,14 +101,13 @@ def get_heatmap_figure(df, year):
         return fig_heatmap
 
     except Exception as e:
-        print(f"An error occurred: {str(e)}")
-        return None
+        return dmc.Alert(f"An error occurred: {str(e)}", color="red", title="Error")
 
 def get_bar_chart_figure(df, year, chart_type):
     if chart_type == 'variable':
         labels = df['variable']
         values = df[year]
-    else:  # Assuming chart_type is 'variable_turunan'
+    else: 
         labels = df['turunan variable']
         values = df[year]
 

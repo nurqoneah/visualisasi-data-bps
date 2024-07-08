@@ -1,5 +1,4 @@
-
-
+import dash_mantine_components as dmc
 import plotly.graph_objects as go
 import json
 import pandas as pd
@@ -79,8 +78,9 @@ def get_heatmap_geos_figure(df, year):
         return fig_choropleth
 
     except Exception as e:
-        print(f"An error occurred: {str(e)}")
-        return None
+        return dmc.Alert(f"An error occurred: {str(e)}", color="red", title="Error")
+        
+        
 
 def get_heatmap_figure(df, year):
     try:
@@ -105,9 +105,7 @@ def get_heatmap_figure(df, year):
         return fig_heatmap
 
     except Exception as e:
-        print(f"An error occurred: {str(e)}")
-        return None
-
+        return dmc.Alert(f"An error occurred: {str(e)}", color="red", title="Error")
 
 
 def get_stacked_bar_chart_figure(df, year, turunan_id):
@@ -127,7 +125,7 @@ def get_stacked_bar_chart_figure(df, year, turunan_id):
 
 def get_area_chart_figure(df):
     years = df.columns[4:].tolist()
-    # colors = px.colors.qualitative.Plotly[:len(df)]
+   
 
     traces = []
     for i, (index, row) in enumerate(df.iterrows()):
@@ -137,7 +135,7 @@ def get_area_chart_figure(df):
             mode='lines',
             name=row['variable'], 
             stackgroup='one',
-            line=dict(color=colors[i]),  # Set warna berbeda untuk setiap variabel
+            line=dict(color=colors[i]), 
             fill='tonexty'
         )
         traces.append(trace)
@@ -149,7 +147,7 @@ def get_area_chart_figure(df):
         margin=dict(l=0, r=0, t=30, b=30)
     )
 
-    # Membuat figure
+    
     fig = go.Figure(data=traces, layout=layout)
 
     return fig

@@ -115,12 +115,10 @@ def add_city_callbacks(app):
             var_id = df[df['title'] == selected_value]['var_id'].values[0]
             vertical_id = df[df['title'] == selected_value]['vertical'].values[0]
             turunan_id = df[df['title'] == selected_value]['turunan_variabel_id'].values[0]
-            # sub_id = df[df['title'] == selected_value]['sub_id'].values[0]
             unit = df[df['title'] == selected_value]['unit'].values[0]
 
             df_data = client.view_dynamictable(domain=selected_city_id, var=var_id)
             df_data.iloc[:, 4:] = df_data.iloc[:, 4:].replace({'': np.nan})
-            print(df_data)
 
             if year not in df_data.columns:
                 return html.Div(f"Year {year} not found in the data")
@@ -139,8 +137,7 @@ def add_city_callbacks(app):
         Input('cities_menu', 'value')]
     )
     def update_time_series(turunan_variable, selected_variables, selected_value, selected_city):
-        # Baca data dari sumber data Anda
-        # df = pd.read_csv(constants.CSV_FILE_DIRECTORY, encoding='ISO-8859-1')
+       
         if selected_value in df['title'].values:
             selected_city_id = int(city[city['variable_kota'] == selected_city]['id_var_kota'].values[0])
             var_id = df[df['title'] == selected_value]['var_id'].values[0]
